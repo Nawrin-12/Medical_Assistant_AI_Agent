@@ -1,0 +1,2227 @@
+See discussions, st ats, and author pr ofiles f or this public ation at : https://www .researchgate.ne t/public ation/380526487
+"At the end of the da y, I am accou ntable": Gig Workers' Self-T racking for Multi-
+Dimensional Accou ntability Management
+Conf erence Paper  · May 2024
+DOI: 10.1145/3613904.3642151
+CITATIONS
+10READS
+167
+4 author s:
+Rie Helene Hernande z
+Pennsylv ania St ate Univ ersity
+6 PUBLICA TIONS    17 CITATIONS    
+SEE PROFILE
+Qiur ong Song
+Pennsylv ania St ate Univ ersity
+11 PUBLICA TIONS    64 CITATIONS    
+SEE PROFILE
+Yubo K ou
+Pennsylv ania St ate Univ ersity
+91 PUBLICA TIONS    3,255  CITATIONS    
+SEE PROFILE
+Xinning Gui
+Pennsylv ania St ate Univ ersity
+88 PUBLICA TIONS    2,245  CITATIONS    
+SEE PROFILE
+All c ontent f ollo wing this p age was uplo aded b y Rie Helene Hernande z on 07 July 2024.
+The user has r equest ed enhanc ement of the do wnlo aded file.
+"At the end of the day, I am accountable": Gig Workers’
+Self-Tracking for Multi-Dimensional Accountability Management
+Rie Helene (Lindy) Hernandez
+The Pennsylvania State University
+State College, PA, USA
+lindyhernandez@psu.eduQiurong Song
+The Pennsylvania State University
+State College, PA, USA
+qiurongsong@psu.edu
+Yubo Kou
+The Pennsylvania State University
+State College, PA, USA
+yubokou@psu.eduXinning Gui
+The Pennsylvania State University
+State College, PA, USA
+xinninggui@psu.edu
+Abstract
+Tracking is inherent in and central to the gig economy. Platforms
+track gig workers’ performance through metrics such as acceptance
+rate and punctuality, while gig workers themselves engage in self-
+tracking. Although prior research has extensively examined how
+gig platforms track workers through metrics – with some studies
+briefly acknowledging the phenomenon of self-tracking among
+workers – there is a dearth of studies that explore how and why
+gig workers track themselves. To address this, we conducted 25
+semi-structured interviews, revealing how gig workers self-track to
+manage accountabilities to themselves and external entities across
+three identities: the holistic self, the entrepreneurial self, and the
+platformized self. We connect our findings to neoliberalism, through
+which we contextualize gig workers’ self-accountability and the
+invisible labor of self-tracking. We further discuss how self-tracking
+mitigates information and power asymmetries in gig work and offer
+design implications to support gig workers’ multi-dimensional self-
+tracking.
+CCS Concepts
+•Human-centered computing →Empirical studies in HCI .
+Keywords
+Gig workers, gig economy, accountability, personal informatics,
+self-tracking
+ACM Reference Format:
+Rie Helene (Lindy) Hernandez, Qiurong Song, Yubo Kou, and Xinning
+Gui. 2024. "At the end of the day, I am accountable": Gig Workers’ Self-
+Tracking for Multi-Dimensional Accountability Management. In Proceedings
+of the CHI Conference on Human Factors in Computing Systems (CHI ’24),
+May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 20 pages.
+https://doi.org/10.1145/3613904.3642151
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than the
+author(s) must be honored. Abstracting with credit is permitted. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+©2024 Copyright held by the owner/author(s). Publication rights licensed to ACM.
+ACM ISBN 979-8-4007-0330-0/24/05
+https://doi.org/10.1145/3613904.36421511 Introduction
+Tracking workers’ behavior and performance has been a longstand-
+ing practice in various industries and economies [ 95,102]. This
+practice has evolved with the rise of platformization where indus-
+tries adopt digital platforms as core infrastructure for business and
+services, accelerating labor and economic shifts [ 11]. This transfor-
+mation is especially pronounced within the gig economy, where
+platforms and algorithms play a central role in managing and moni-
+toring workers [ 11,27]. Gig platforms leverage technology to track
+various aspects of gig workers’ activities, including location and per-
+formance metrics (e.g., acceptance rate, cancellation rate, customer
+ratings) for control, safety, and customer satisfaction [ 75,111]. Re-
+searchers have extensively studied these algorithms and metrics
+due to their role in surveilling and monitoring the worker [ 13,56],
+aligning with broader studies on workplace tracking that delve into
+the implications of surveillance [3, 89].
+There is a distinction between the external tracking done by gig
+platforms and self-tracking for empowerment and self-knowledge.
+While there is an abundance of research on platform metrics, only
+some studies touch on gig workers’ self-tracking practices outside of
+gig platforms. For instance, gig workers have been observed to self-
+track as a form of protection from platforms and customers [ 75,99].
+Additionally, gig workers self-track income, expenses, and mileage
+to fulfill tax obligations given their classification as independent
+contractors which requires them to calculate and file income and
+self-employment taxes [ 83,106]. Researchers have recognized gig
+workers’ self-tracking practices and what necessitates them within
+these contexts, however, there are no focused studies that delve
+into understanding why they self-track, what they track, and how
+they use self-tracked data on a broader scale.
+Within human-computer interaction, self-tracking is also com-
+monly studied in the personal informatics (PI) field. The areas of
+workplace [ 16,61] and productivity tracking [ 40,53] within PI
+share some similarities with gig workers as they are concerned
+with labor, but largely focus on the traditional workforce. Addi-
+tionally, some HCI researchers have explored how to enhance gig
+workers’ reflecting and acting on their own data [ 115,116], based
+on the stage-based model of PI [ 58]. While PI has begun to be
+studied within the context of gig work, researchers have yet to
+comprehensively understand gig workers’ behavior and activity of
+self-tracking.
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+Given these identified research gaps, we aimed to answer the
+following research questions: 1) Why do gig workers self-track?
+and 2) How do gig workers self-track? (i.e., what tools do they
+use, what data do they collect, how do they use their data). To
+answer these, we conducted 25 semi-structured interviews with
+gig drivers (i.e., rideshare, delivery, courier) from a diverse set of
+gig platforms who use a variety of self-tracking tools in their work
+lives. Applying an inductive thematic analysis approach to our data,
+it became apparent how gig workers use self-tracking to uphold
+accountabilities they hold across three distinct identities: personal
+accountabilities of the holistic self, fiscal and resource accountabili-
+ties of the entrepreneurial self, and performance accountabilities
+of the platformized self. Based on these findings, we discuss the
+self-accountability gig workers demonstrate and how self-tracking
+is a form of invisible labor. We further discuss self-tracking’s role
+in mitigating information and power asymmetries in gig work and
+provide design implications for multi-dimensional self-tracking.
+With this study, we make several contributions to the field of HCI.
+First, we provide empirical insights into how gig workers utilize self-
+tracking to effectively manage their multi-dimensional accountabil-
+ities. This sheds light on the intricacies of the gig economy, which
+holds relevance for both academic inquiry and practical applications.
+Second, our research enriches the ongoing discourse concerning the
+prevalent information and power asymmetries within the gig econ-
+omy. Third, we present design implications aimed at facilitating gig
+workers’ intricate task of managing multi-dimensional accountabil-
+ity through self-tracking. These contributions collectively enhance
+our understanding of the gig economy’s digital landscape and its
+implications for workers.
+2 Related Work
+The gig economy refers to a labor market characterized by short-
+term, flexible jobs, often facilitated through digital platforms or apps.
+In this model, individuals, referred to as gig workers, operate as
+independent contractors with increased autonomy, taking on tasks
+or projects on a temporary or part-time basis [ 67]. In a recent survey,
+McKinsey found that 36% of employed U.S. respondents (around
+58 million individuals) identify as independent workers, growing
+from 27% in 2016 [ 26]. Examples of gig work include rideshare (e.g.,
+Uber), food delivery (e.g., Doordash), courier (e.g., Roadie), freelance
+work (e.g., Fiverr,), and crowdwork (e.g., Amazon Mechanical Turk).
+Different services exhibit distinct characteristics, encompassing
+variations in service models, customer interaction, location, and
+complexity [27, 48, 109].
+As independent contractors, gig workers shoulder a unique form
+of accountability as they self-manage the intricacies of their roles,
+marked by a notable degree of autonomy and responsibility as a
+result of platformization and algorithmic management. They must
+manage various aspects of their work lives from before, during,
+and after working to maintain an advantage and stay profitable
+on that platform [ 2,49]. Existing studies on self-management have
+predominantly focused on business leaders [ 25,36], who, similar
+to independent contractors, operate with a high degree of auton-
+omy and are responsible for managing their work without immedi-
+ate oversight. In these studies, the concept of self-management is
+closely intertwined with self-accountability as it acts as an internalcontrol system in the absence of being answerable to another party
+[25,36]. Self-management, as defined in studies with independent
+contractors and business leaders, involves exerting heightened per-
+sonal control over one’s career in the absence of direct supervision.
+It includes a broad set of activities (i.e., defining working hours,
+managing finances, and setting goals) that allow individuals to
+enhance productivity, achieve objectives, and make work-related
+progress. While self-management typically employs various tech-
+niques to reach diverse goals, our focus centers on exploring how
+gig workers self-track to manage their unique needs and situations.
+Gig workers in the U.S. must track information about themselves
+(e.g., income and mileage) for tax reporting purposes [ 45]. To mon-
+itor these essential data points and other kinds of information, gig
+workers have access to various tools including gig platforms, third-
+party tools, and manual tracking methods. Gig platforms provide
+in-app tracking features such as platform metrics (Table 1) or ac-
+tivity information (Table 2). Platform metrics are measurements
+used to assess performance, while activity information consists of
+information that are not direct performance indicators. The tables
+below present tracked metrics and information on various gig plat-
+form driver apps, organized based on their functions. There are
+also several third-party applications (e.g., Gridwise, Stride) that
+cater to gig workers. These typically include mileage and expense
+tracking for tax needs and can include features like smart tools to
+maximize earnings or information on high-demand areas. Workers
+can also manually track their activity using pen and paper, or digital
+spreadsheets like Google Sheets or Microsoft Excel.
+Below, we examine existing literature on accountability and
+self-tracking practices among gig workers. We first review account-
+ability literature and connect this to existing discussions on gig
+worker accountability. We then examine personal informatics liter-
+ature and connect this to how self-tracking has been observed or
+studied amongst gig workers.
+2.1 Accountability and Gig Work
+Accountability and responsibility are often conflated with one an-
+other, but there lie subtle differences in how each is felt and assigned.
+Responsibility implies self-control and obligation, while account-
+ability involves being answerable to another party (i.e., a coworker,
+supervisor, or customer) or to oneself [ 25,85]. Along with being
+answerable is the expectation that an “evaluation may occur” and
+that an “explanation [by the one held accountable] is required” [ 42].
+While the two can be used interchangeably, responsibility is the
+broader of the two as it encompasses a range of obligations, duties,
+and tasks that may include an individual’s accountabilities. We
+use accountability for this study as it is a more relational concept
+that captures the intricacies of various relationships, expectations,
+and influences that shape gig workers’ behavior and decisions. To
+understand this subject, we review literature that has explored the
+accountability of self-employed individuals, contractors, and gig
+workers.
+2.1.1 Self-Employed and Contractor Accountability. Studies on self-
+employed individuals have specifically looked into their financial
+accountabilities given the increased responsibilities and enhanced
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+complexities surrounding their self-employment [ 6,97]. Here, re-
+searchers explore the increased accountabilities self-employed in-
+dividuals have surrounding managing their finances and taxes as
+they are accountable to systems in place – rather than individuals
+– such as tax or child-care organizations [ 6]. For contractors in the
+government [ 5,22] and military [ 41,70,76], researchers mainly
+explore accountability in adverse incidents: who is and should be
+legally held accountable, and whether that ownership makes sense
+considering the contractor-employer relationship. There are simi-
+lar discussions surrounding accountability in accidents involving
+gig workers. There have been cases leading to injury or death
+where gig platforms avoided accountability as they argue their po-
+sition as a matching or networking service instead of a rideshare
+or delivery company [ 19]. Drivers found themselves in a gray area
+when accidents occurred while logged on and looking for another
+gig, but not while fulfilling a delivery or ride service [ 87]. These
+instances highlight gig workers’ independent contractor classifica-
+tion, how platform companies distance themselves from the worker
+to maintain this classification [ 93], and how these companies ex-
+ploit employee classification systems to reap “rewards without risk
+and responsibility” [113].
+2.1.2 Gig Worker Accountability. Explorations into gig workers’ ac-
+countabilities also consider how accountability is shifted between
+the worker and platform due to workers’ classification as inde-
+pendent contractors – particularly what the platform will take
+accountability for and what they leave to the worker. Researchers
+have observed how gig workers are accountable for maintainingseparate records of their activity that are also automatically and
+algorithmically evaluated by the platform [ 75,99]. As a result, they
+must manage their standing with “reputation auditing” where they
+rectify platform records to more accurately reflect their experiences
+[75]. Workers do this by maintaining records of their activity which
+they use to support claims, thus redirecting the accountability they
+previously held to the platform or customer [ 98,99]. These reports
+signify the precarious relationship between contractor and em-
+ployer as they serve as the focal point of accountability negotiation
+between the two parties.
+In summary, accountability researchers have primarily explored
+how contractors and self-employed workers manage their unique
+accountability dynamics with companies or not having anyone to
+directly report to. While the subjects of these studies draw sim-
+ilarities to gig workers, the elements of their employment still
+differ, particularly when considering the ambiguous boundary they
+walk between contractor and employee [ 93]. Studies exploring gig
+worker accountability highlight how their classification as inde-
+pendent contractors affects how accountability is managed and
+delegated between themselves and the platforms they serve. While
+these studies delve into the construction of accountability in these
+relationships, they don’t explore how gig workers internally man-
+age accountability. This study addresses this gap by reporting on
+how gig workers self-track to oversee their accountabilities.
+Table 1: Gig Platform Metrics. Where DR = Driver Rating; AR = Acceptance Rate; CR = Cancellation Rate; CSR = Completion/Success Rate; PR
+= Punctuality Rate; DRC = Delivered & Received Count; SCR = Schedule Commitment Rate; SA = Shopping Accuracy; SPI = Seconds per Item.
+Platform Category DR AR CR CSR PR DRC SCR SA SPI
+Lyft Rideshare ✓ ✓ ✓
+Uber Rideshare ✓ ✓ ✓
+Amazon Flex Delivery ✓ ✓ ✓ ✓
+DoorDash Delivery ✓ ✓ ✓ ✓
+Grubhub Delivery ✓ ✓ ✓ ✓ ✓
+Instacart Delivery ✓ ✓ ✓ ✓
+Shipt Delivery ✓ ✓ ✓
+Uber Eats Delivery ✓ ✓ ✓
+Walmart Spark Delivery ✓ ✓ ✓ ✓
+Table 2: Gig Platform In-App Tracked Information. Each platform will display tracked data differently, whether it’s on a weekly, daily, or per
+trip basis.
+Platform Category Mileage Income Working TimeNumber of
+Gigs
+Lyft Rideshare ✓ ✓ ✓ ✓
+Uber Rideshare ✓ ✓ ✓ ✓
+Amazon Flex Delivery ✓ ✓
+DoorDash Delivery ✓ ✓ ✓ ✓
+Grubhub Delivery ✓ ✓
+Instacart Delivery ✓ ✓ ✓ ✓
+Shipt Delivery ✓ ✓
+Uber Eats Delivery ✓ ✓ ✓ ✓
+Walmart Spark Delivery ✓ ✓ ✓
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+2.2 Personal Informatics and Gig Work
+Personal informatics (PI) is “a school of thought which aims to use
+technology for acquiring and collecting data on different aspects
+of the daily lives of people” [ 92]. PI systems are those that “help
+people collect personally relevant information for self-reflection
+and gaining self-knowledge” [ 58]. Research in PI has explored self-
+tracking across various populations such as Quantified Selfers [ 15]
+and knowledge workers [ 53], as well as diverse domains like men-
+struation [ 30], physical activity [ 107], and finance [ 52]. Notably, the
+field has heavily focused on health and wellbeing, data collection
+and reflection, and behavior change motivations [29].
+2.2.1 Workplace and Productivity Tracking. While gig workers’
+self-tracking activities have only sparsely been studied by re-
+searchers, two more commonly explored areas of workplace and
+productivity tracking draw some similarities to gig work. Work-
+place and productivity tracking both explore how tracking can
+be used to enhance activity, performance, and output, with work-
+place tracking being broader as it also encompasses work-related
+productivity tracking. Workplace tracking involves tracking to sup-
+port, raise awareness of, or manage individuals in the workplace.
+Research has highlighted its benefits in enhancing collaboration
+among colleagues [ 61], improving workplace health and wellbeing
+[16], and increasing productivity [ 53]. Closely related is produc-
+tivity tracking which has been understood in both the workplace
+context and on a more individual level. Researchers have explored
+ways to improve [ 53] or quantify [ 54] productivity. Productivity
+researchers have looked into how tracking productivity can en-
+hance wellbeing as workers balance and reflect on productive time
+alongside breaks [ 23,40], leading to increased awareness and per-
+ception of their work [ 40,53]. However, while researchers have
+highlighted the utility of both workplace and productivity tracking,
+they also note negative side effects such as issues of surveillance
+[3, 89], heightened stress [73], and pressure to track [44, 104].
+Workplace and productivity tracking studies are somewhat re-
+lated to gig workers as they center on labor, however, the two
+primarily focus on traditional workplaces where employees an-
+swer to a supervisor or work collaboratively with others. The study
+subjects are often information and knowledge workers such as
+software developers, designers, and researchers [ 28,53,60,71].
+Tracking in these contexts differs from that of gig workers as they
+lack direct supervisors, necessitating increased self-management
+and accountability. Gig workers’ self-tracking use and experiences
+remain understudied, but some HCI researchers have begun investi-
+gating ways to enhance gig workers’ reflecting and acting on their
+data. One study explored using social sensing (a collaborative ef-
+fort with drivers’ partners to understand and make decisions based
+on their data) to help drivers understand their health and achieve
+work-life balance [ 115]. Another explored the challenges surround-
+ing algorithmic management by focusing on how the design and
+presentation of data influence the wellbeing and work experience of
+gig workers [ 116]. The researchers found that their designs served
+as boundary objects in AI, helping participants gain insights about
+their work activity and experiences.
+2.2.2 Gig Worker Self-Tracking. Some researchers have noted gig
+workers’ self-tracking activity concerning their tax responsibilities[82,83] and self-protection [ 10,75,99]; however, there has not
+been an in-depth empirical study of these tracking behaviors. Gig
+workers’ self-employed status increases their tax responsibilities
+compared to employees of a company, placing additional administra-
+tive burdens on their shoulders [ 106]. These include self-reporting
+income and maintaining thorough records for potential IRS au-
+dits [ 83]. Failure to maintain records of their income, expenses,
+or mileage may result in tax challenges [ 82,106]. Furthermore,
+while some gig platforms track workers’ income and mileage, the
+reported mileage is often an incomplete account of the worker’s
+actual business mileage [ 82,83]. As a result of gig workers’ unique
+tax circumstances, researchers in this field have identified the need
+for gig workers to engage in self-tracking as they relate to their tax
+requirements.
+Self-tracking has also been observed as a response to the al-
+gorithmic management and platform surveillance that gig work-
+ers experience. Platform algorithms compare worker data against
+company-specific metrics as indicators of performance [ 110,111],
+leading to workers constantly monitoring their metrics to assess
+their performance [ 10] and avoid consequences such as fewer job of-
+fers or deactivation [ 55,66]. As such, this algorithmic management
+is often referred to as a form of workplace surveillance as platforms
+seek to control workers’ performance and behavior on the job
+[74,80]. Workplace tracking researchers have similarly raised con-
+cerns surrounding increased surveillance in the workplace, drawing
+comparisons to Foucault’s panopticon [ 3,89]. Platform surveillance
+prompts workers to engage in self-protective measures such as
+tracking conversations with support to ensure issues are resolved
+[10], record-keeping as a way to protect themselves in disputes
+[99], and “reputation auditing” with their tracked data as a way of
+resolving poor metrics [ 75]. This body of research has observed the
+use of self-tracking and the motivation behind it as a form of self-
+protection, however, it lacks an in-depth exploration of self-tracking
+behavior.
+In summary, despite research in workplace and productivity
+tracking sharing some similarities with gig work as they all center
+on labor, studies here predominantly focus on knowledge workers
+in traditional settings. This differs significantly from non-traditional
+work arrangements in the gig economy where workers lack direct
+supervision and tracking is more closely tied to financial and legal
+implications, such as their heightened tax accountabilities. Further-
+more, while researchers have begun to recognize the self-tracking
+needs of gig workers, there is a lack of grounding in empirical
+research that focuses on why and how they self-track. Existing gig
+worker studies show that self-tracking is used in various dimen-
+sions of a worker’s activity, prompting an investigation into how
+self-tracking among gig workers might result in unique practices
+and experiences. Our study provides an in-depth understanding of
+how gig workers use self-tracking to maintain accountability given
+their categorization as self-employed, independently contracted
+workers.
+3 Methods
+We conducted semi-structured interviews with 25 gig drivers to
+understand their use of self-tracking tools and how these tools
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+support their work, then used an inductive thematic analysis [ 7,18]
+to analyze the data.
+3.1 Participant Recruitment
+We focused on recruiting gig drivers (i.e., rideshare, food delivery,
+and courier drivers) due to their unique tracking behaviors where
+they track not only time and finances but also mileage for tax
+deductions [ 105]. This data dimension offers insights into their self-
+tracking practices and data interpretation, distinct from other kinds
+of gig work. Microtaskers (e.g., Task Rabbit, Handy) were excluded
+as they are less common than rideshare and delivery roles available
+across most U.S. cities. Additionally, rideshare and delivery drivers
+do similar enough jobs that there are overlaps in those groups.
+Recruitment was done both online and offline. For online re-
+cruitment, we planned to post solely on gig work-related forums
+(subreddits) on Reddit that allowed calls for research participants
+but found that several subreddits prohibited posting about research
+studies. Therefore, we expanded the search to include non-gig
+work-targeted subreddits and were able to post (with permission)
+on a total of eight subreddits (r/GigWork, r/amazonflexdrivers,
+r/UberEATS, r/Grubhubdrivers, r/roadie, r/SampleSize, and a sub-
+reddit for the authors’ university). Despite the limitation, we were
+still able to recruit a diverse set of participants due to the phenom-
+enon of “multi-apping”, where gig workers work with a variety of
+platforms at a time instead of being constrained to just one [ 38].
+For offline recruitment, we created and distributed flyers to various
+local establishments (e.g., restaurants, cafes, community centers,
+school buildings) to reach gig workers in our community.
+All recruitment messages included information on the study goal,
+expected interview length, compensation, inclusion criteria, and a
+link to the screener survey. This survey collected preliminary data
+to select a diverse group of participants based on demographics
+(e.g., How old are you?, To which gender identity do you most
+identify?), gig work specifics (e.g., What specific gig platform/s
+do you currently work on?), and self-tracking tool use (e.g., What
+apps or tools do you use for tracking related to your job?). Of the
+380 individuals who completed the screener survey, 274 met the
+inclusion criteria: being in the U.S., aged 18 or older, working as a
+gig driver (e.g., rideshare, courier, delivery), and self-tracking for
+gig work. We used purposeful sampling techniques [ 86] to select a
+diverse sample in terms of their background (i.e., race, gender, age)
+and their gig work activity (i.e., platforms they worked on, tracking
+applications they used).
+We interviewed 25 participants whose demographics and gig
+work details can be found in Table 3. Ages ranged from 24 to 62
+years (median = 30). Of the participants, 14 identified as male, 7 iden-
+tified as female, 2 identified as non-binary, and 2 did not disclose.
+For types of gig work, 17 participants did some sort of delivery
+(i.e., food delivery or courier service), 6 did rideshare, and 2 did
+both delivery and rideshare. The difference between rideshare and
+delivery drivers can be explained by several participants stopping
+rideshare and moving to delivery due to the COVID-19 pandemic,
+aligning with gig worker activity across the U.S. [ 96]. Participants
+used various tracking methods including automatic tracking ap-
+plications, pen and paper, spreadsheets, and gig platform-based
+tracking features.3.2 Data Collection
+Interview questions covered the information they paid attention to
+and tracked (e.g., What information do you find useful to know to
+perform your job activities?, What information about you do the gig
+platforms track and present to you?), their choice of self-tracking
+tools (e.g., What made you select your tracking app?, What are
+your criteria for a tracking tool?), their use of self-tracking tools
+and self-tracked data (e.g., Why do you track?, What do you learn
+by looking at your data?), and their experiences with work-related
+tracking (e.g., How do you feel about tracking your data for work?,
+What challenges do you encounter while self-tracking for work?).
+Probing questions were dynamically created when needed to gather
+additional insights. After the initial ten interviews, the interview
+protocol was refined. The changes involved adding common follow-
+up questions (e.g., ‘How often do you look at this information?’
+in regards to platform metrics), revising questions for clarity (e.g.,
+‘How do you make sense of data from different tracking sources?’
+turned to ‘How do you evaluate or integrate data you have from
+different tracking apps?’), and eliminating questions with redun-
+dant answers (e.g., ‘Do you need to distinguish between data from
+different gig platforms?’ and ‘Do you have different tracking needs
+based on the different platforms?’).
+Interviews were conducted in English, video and audio recorded,
+and transcribed verbatim, with recordings and transcriptions stored
+in a password-protected database. Participants provided verbal
+consent to being recorded, receiving detailed information on the
+study, their rights as volunteers, and data usage. They were also
+given the opportunity to ask questions about the study. Interviews
+lasted approximately 30-90 minutes (median = 47 minutes, average
+= 49.76 minutes). Upon completion, 24/25 participants received a $30
+Amazon gift card as compensation and one was compensated $15
+as they did not complete the interview. This participant was only
+able to partially complete the interview due to Internet connection
+issues, and we were unable to reschedule a follow-up interview.
+Nonetheless, they provided valuable insights into questions related
+to how they track, why they track, and how they use their tracked
+data for work-related activities.
+3.3 Data Analysis
+We used reflexive thematic analysis to iteratively code data and
+generate themes with a bottom-up approach. Following Braun &
+Clarke’s six phases [ 7,18], the first two authors familiarized them-
+selves with the data by reviewing recordings and fixing transcrip-
+tions, then used Google Sheets to code by independently inspecting
+quotes and creating detailed descriptions of participants’ activities
+and experiences that were meaningful and relevant to the study.
+After coding, the two authors met to discuss codes by highlighting
+interesting points and reviewing similar or unclear codes. Following
+these meetings, the two authors met with the rest of the research
+team to discuss and refine codes as needed. The final set includes
+557 unique codes such as “paying attention to platform metrics
+to avoid consequences (i.e., deactivation) that may happen if you
+reach a certain number,” “seeing self-tracking as something you
+have to do as a business,” and “tracking to get a picture of where
+they stand when calculating all income and expenses. ” The first two
+authors then generated initial themes by grouping similar codes, an
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+iterative process where the authors refined themes for cohesiveness
+and distinction. The full research team then reviewed candidate
+themes to ensure they made sense and were a representative analy-
+sis of the full dataset. Once the themes were set, the team proceeded
+with defining and naming themes to specify and differentiate them.
+Finally, the team began the writing process to weave together the
+analysis with data extracts to create a coherent account of the data.
+4 Findings
+Participants’ self-tracking behaviors were closely linked to the ac-
+countabilities they held. Three identities crystallized as a result of
+observing and analyzing how participants navigated and expressed
+themselves concerning their roles and obligations, shedding light on
+why and how gig workers engage in self-tracking. First is the holis-
+tic self where gig workers self-track to manage personal account-
+abilities and empower themselves. Second is the entrepreneurial
+self where gig workers consider fiscal and resource accountabilities
+as self-employed, independently contracted workers. Finally, we
+have the platformized self where workers manage performance
+accountabilities as they navigate relationships with the platforms
+and customers.4.1 Personal accountability to the holistic self
+Gig workers maintain personal accountabilities to both themselves
+and others. They are self-accountable for learning their capacity
+for work, making decisions, achieving work/life balance, and recog-
+nizing achievements. They are also accountable to their network,
+particularly when their work directly impacts those relationships.
+For instance, if a worker depends on their gig income to support
+their family, they are accountable for generating sufficient income
+for their family’s needs. These encapsulate the holistic selves that
+gig workers self-track to gather knowledge on and act in the inter-
+est of, enabling them to make informed decisions about when, how
+much, and which jobs to take.
+However, gig platforms do not provide adequate tools that can
+help workers track for their holistic selves. For example, several
+participants, aligning with existing studies, reported incomplete
+mileage [ 82,83] or incorrect income [ 10] tracking by gig platforms.
+Additionally, our participants reported that platform-tracked in-
+formation often centers around metrics or factors pertinent to the
+platform company (i.e., job-related metrics) which may not be rele-
+vant for workers’ needs:
+Table 3: Participant Demographics and Tracking Tools Used.
+P# Age Race Gender Gig Platform/s Tracking Tool/s
+1 24 Black or African American Male DoorDash Triplog, Spreadsheet
+2 30 Black or African American Female Uber Gridwise, Spreadsheet
+3 45 White Male Grubhub, Uber Eats Pen and paper
+4 25 Black or African American Female DoorDash, Grubhub Pen and paper, Microsoft Excel
+5 27 Asian Nonbinary Roadie Microsoft Excel
+6 - White Female DoorDash, Walmart Spark Stride, Excel, GasBuddy
+7 44 White Male Amazon Flex MileIQ, Microsoft Excel
+8 31 White - DoorDash, GoPuffSportsTracker, Waze, GasBuddy, GPS
+Camera, Notes app
+9 62 White - Amazon Flex Pen and paper
+10 58 White, Hispanic/ Spanish/ Latino MaleDoorDash, Uber Eats, Walmart Spark,
+Roadie, ShiptGridwise, Spreadsheet
+11 30 Black or African American Male Uber, Lyft, DoorDash, Instacart Everlance, Fuelio, Gridwise
+12 30 Black or African American Male Lyft Lyft app
+13 40 American Indian or Alaska Native Nonbinary Uber Eats Uber Eats app, Pen and paper
+14 32 White MaleAmazon Flex, Instacart, DoorDash,
+Grubhub, FavorGoogle Sheets
+15 36 White MaleDoorDash, Grubhub, Uber Eats,
+Roadie, ShiptMileIQ, Google Sheets
+16 27 Black or African American Male Uber Notes app
+17 28 White Female Uber Uber app
+18 25 Black or African American Female Uber EatsUber Eats app, Google Maps, Apple
+Maps
+19 27 Black or African American Male Uber, Uber Eats Everlance, Gridwise, Fuelio
+20 30American Indian or Alaska Native,
+Black or African AmericanMale Uber Gridwise
+21 36 White Male DoorDash Everlance
+22 31 White Male Uber Everlance, Notes app
+23 25 Black or African American Male Uber, Lyft Traqq, Microsoft Excel
+24 25 Black or African American Female DoorDash Para
+25 30 Asian Female Uber Eats, Shipt Everlance, Mint
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+“I would say [my tracking] has to do with personal
+stuff, but theirs has to do with business. So, [their
+tracking is] after probably their money, their sales,
+their business. For my [tracking], I’m improving my-
+self, [working] on myself, [staying] out to make my-
+self better than [...] the last day.” (P11)
+Thus, participants used third-party tracking tools in addition to
+platform-provided information. With external tools, they can track
+personally relevant information that may not be tracked by gig
+platforms like time spent working, overall mileage, or personal expe-
+riences while working. Additionally by calculating, analyzing, and
+reviewing this data, they can learn what the job is like, determine if
+their jobs are worth continuing, know how much they’re earning,
+monitor productivity, and manage work/life balance. With this,
+workers are empowered as they gain knowledge about themselves,
+reflect on their activity, and make informed decisions. Self-tracking
+allows them to cultivate their autonomy and flexibility as they can
+use their collected information to act in their own self-interest.
+4.1.1 Generating self-knowledge. Self-tracking grants gig workers
+a quantified and monitored understanding of their activity, provid-
+ing them with valuable insights into the details and dynamics of
+their work lives which can be used to make professional and per-
+sonal decisions. Previous studies found that since workers navigate
+the gig landscape independently, they used online communities to
+learn about the job [ 47,114]. Beyond this, we found that partici-
+pants used self-tracking to understand gig work as it pertained to
+their unique experiences, particularly due to the market-dependent
+nature of gig work:
+"A lot of gig work [...] is market dependent. Los Ange-
+les is going to [be] a lot different [from] where I am in
+Kentucky. So you can’t compare your city to Los An-
+geles, they just have different food and demographics. "
+(P6)
+Each worker’s experience could significantly differ from another
+due to differing local market conditions that impact job pricing and
+availability [ 11,27]. As a result, there is limited information that
+they can exchange to learn about the gig work experience, implying
+that workers should explore more personalized methods to gain
+insights into working within their specific market. For instance,
+self-tracking mileage, working time, and income specifically helped
+P25 understand gig work as it pertained to their unique experiences:
+“In the beginning with Shipt, when I was tracking,
+I also was just learning about gig work and how it
+worked, and really tracking how much I was making
+an hour, how much time I was working in coordina-
+tion with how much I was making in a month. And
+so, I guess just like learning the capacity of how much
+I could make.” (P25)
+Tracking also allowed them to learn more about the platforms
+they serve: “The more data you have points to the [...] things you
+can start tracking and seeing, and suddenly things come to light.”
+(P14). P14 shared how they were able to understand assignment
+algorithms by observing their tracked pay data where. From there,
+they noticed they were not paid consistent rates by Amazon: “If I
+never put together a spreadsheet for some of these base [pays] [...]I would have thought in my head it’s just coincidence that some
+of these lower-paying shifts have been some of my worst shifts.”
+(P14). Having their tracked data available to them allowed them to
+see a pattern in what kinds of jobs were being sent their way.
+Self-tracking their activity also gave workers an objective per-
+spective of their activity to monitor their productivity, efficiency,
+and finances as they relate to their needs and goals:
+“[Tracking is] like a way of giving myself a reality
+check because it means that at the end of the day, I
+am accountable for what I’m doing. So at the end of
+the day, I can always check to see what I’m doing
+right or if I’m doing it wrong.” (P23)
+Given how our participants demonstrated how they self-track
+their business expenses, income, mileage, and the time they spend
+working to learn more about themselves, we find that self-tracking
+allows gig workers to gather relevant insights about their behavior,
+activity, and experience. This includes learning what the job could
+look like for them, what working for the platform is like, and how
+they are performing in the job. Having this data increases their
+self-awareness and autonomy as they can learn from and act on
+their tracked data.
+4.1.2 Evaluating data to inform work and life. With enhanced
+awareness of their performance, gig workers can evaluate their
+work in alignment with their personal, professional, and financial
+goals:
+“For me, [tracking is] good because it helps you to
+know if what you’re doing is worth it or not, because
+you don’t just work because you want to work. You’re
+working because you want to make a living out of it.
+[...] So you have to work and have a [record] of what
+you’re doing. If it’s not good, if it’s not working very
+well, you can decide to take up a different job.” (P2)
+Using self-tracking tools allows them to dynamically review and
+evaluate their data, informing the decisions and assessments they
+make. Some participants engage in performance assessments by
+reviewing the efficiency and the viability of their work using data
+on their income, expenses, mileage, and time. With this data, they
+can evaluate “if it is something [they] still need to continue, or if
+[they are] actually gaining or earning from this kind of work. ” (P13).
+Several participants shared an example highlighting a gig worker’s
+decision-making process, which includes calculating income against
+expenses like gas and time costs. This becomes crucial when dealing
+with low-paying, far-distance jobs that may yield a low dollar-
+per-mile or dollar-per-hour ratio, potentially leading to financial
+losses due to higher operating costs. Others tracked and evaluated
+income from various jobs, especially when working for multiple
+gig platforms simultaneously (multi-apping): “I also compare with
+some of my [other jobs] as well. [...] I’m getting $125 here a day and
+I’m getting $110 here.” (P20). From there, participants shared how
+they reconsidered their involvement with different gig applications:
+“Freelance is where I’m spending most of my time
+because after my analysis, I have found that it is more
+profitable to me. [...] I’m getting more per hour com-
+pared to the Uber jobs. [...] It gives me the rating on
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+my gigs and which gig is better than the other. Just
+to make my decisions personally.” (P16)
+With their tracked data, participants can also collaborate with
+family members to determine if their work is worthwhile. In the
+case of P10, they reviewed their data with their wife to evaluate
+income earned, mileage, and time spent on gig work:
+“Sometimes I’ll sit down with my wife [...]and take a
+look at [my spreadsheet] and see. ‘Okay, you work
+this amount of hours, you made this much. At the end
+of the day is it worth it?’ [...] She’ll take a look at it
+from a family perspective. ‘Okay, so you made this,
+you worked this many hours, you traveled this far.
+Okay, what did you miss? You know our son did this.
+Our grandkids did this. We could have done this.’ So
+she’ll kind of throw that in there. And that’s what I
+use to evaluate, if that makes sense.” (P10)
+In summary, self-tracking fosters a heightened sense of auton-
+omy and control in gig workers’ personal and professional lives
+as they can make data-driven decisions regarding their jobs using
+insights from their collected data. This is particularly important as
+gig work is inherently independent, with no coworkers or managers
+who can observe their work. Self-tracking provides a sense of orga-
+nization and control over their jobs, and helps workers maintain
+accountability for the different responsibilities they may hold.
+4.2 Fiscal and resource accountabilities to the
+entrepreneurial self
+Gig workers have to consider their obligations and accountabilities
+as self-employed individuals to both themselves and the govern-
+ment. These include tax preparation, financial management, time
+management, and vehicle maintenance – all of which encapsulate
+the fiscal and resource accountabilities of the entrepreneurial selves
+that gig workers must manage.
+To navigate the multiple accountabilities of self-employed con-
+tractors, participants shared how they have to keep track of dif-
+ferent aspects of their activity: “I have to be the one doing all the
+aspects: both the finance, both the planning, both the schedule –
+kind of everything.” (P19). This includes personally tracking data
+such as income, expenses, time, and vehicle-related information.
+While platforms have some data that may be helpful for workers
+(see Table 2), oftentimes gig workers do not find this sufficient for
+managing their business due to that information being incomplete
+or being presented ineffectively as shared by our participants and
+in prior studies [ 10,82,83]. The information they track is then used
+to manage the accountabilities they hold as part of “running a good
+business” (P9):
+“You know, I’m a company. I don’t have an LLC or
+anything like that, but I’m running a business, so to
+speak. And part of [that] is keeping track of what’s
+going on. So you know what’s going on, you’re not
+guessing.” (P9)
+By tracking different aspects of their daily routines and reviewing
+summaries or analyses of them (i.e., total profit, dollars per hour),
+gig workers maintain accountability for the various responsibilities
+related to their status as self-employed contractors.4.2.1 Managing and evaluating finances. Gig work’s flexibility,
+independence, and earning potential make it an appealing option
+for individuals seeking some source of income [ 67]. Self-tracking
+finances offers workers the ability to fully evaluate the viability of
+gig work and understand their financial situation: “I just wanted to
+know if financially I’m doing okay. If the job is paying. So that is
+why I look at [my data] like, oh am I doing well? Is this business
+okay?” (P20).
+While PI researchers have explored financial tracking [ 52,57],
+gig workers’ approach differs from occupations engaged in per-
+sonal budgeting and financial tracking due to the precarious nature
+of gig work [ 65] resulting in variable, inconsistent income [ 21].
+Given this, gig workers must be diligent in documenting pay, man-
+aging deductions, and setting aside money for taxes, as they lack
+automatic paycheck deductions:
+”It’s good to be able to calculate the actual amount
+of money I earned and get out of the trap that these
+apps put you in. [They] make you appear like you’re
+earning more than you actually are. But having an
+accurate representation, especially around taxes and
+wear and tear on my car, tracking that has given me a
+little bit more reassurance that I’m not just doing this
+in desperation.” (P15)
+While platforms collect and display income information, work-
+ers transfer this data to external tracking applications to connect
+it with their expenses. Doing so provides them with a comprehen-
+sive perspective of their financial standing as they can calculate
+profits, helping them manage their money effectively. Participants
+shared how tracking enables them to review their business expenses
+alongside their income to know whether the job is profitable:
+“It helps me to know what I’m earning and what
+I’m spending, my expenditure versus my revenue.
+It makes me very prudent and very reliable with my
+spending habits. [...] If I’m really getting a profit out of
+what I’m doing after the whole tax deduction.” (P21)
+To evaluate their profitability on a smaller scale, participants
+calculated their net income per hour and net income per mile. This
+helped them visualize their earnings in the face of pay inconsistency:
+"Some days you only make X amount per hour, and the others you
+make more. I try to look at it as you would a regular job where you
+get a week’s pay." (P9). Several participants also emphasized the
+importance of considering fluctuating gas prices, so they calculated
+net income per mile as a way of managing that instability: "You
+want to keep track of your profitability [with] dollars per mile. [...]
+It’s only worth your while with gas being as much as it is." (P10).
+Some participants also monitored both work and non-work ex-
+penses to assess whether their lifestyles contributed to achieving
+their profit goals: “If I feel I have overspent within the month [then]
+I cut down the expenditure or increase my savings for the [next]
+month.” (P1). Having this information available to them allows them
+to proactively adjust their spending behavior and earning activities
+according to their goals.
+In summary, due to the flexibility and independence associated
+with the gig economy, workers must diligently track their income
+and expenses to evaluate the profitability and viability of working
+in the gig economy.
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+4.2.2 Fulfilling tax obligations. As self-employed contractors, gig
+workers are independently responsible for calculating, paying, and
+providing accurate information for their taxes. Participants in this
+study emphasized the importance of tracking to correctly file their
+taxes and maximize their income from gig work: “I need to track
+all of it, so I can do my taxes correctly and get my tax returns done
+correctly.” (P5). Specifically, they shared how they meticulously
+tracked gig work-related income, documented business expenses,
+and recorded business mileage. These practices are crucial to en-
+suring accurate tax filings and maximizing the potential for tax
+returns.
+Participants who had worked a W-2 job (a traditional employee
+role) shared that the necessity of tracking for gig workers can feel
+exploitative when they know that it isn’t done by everyone:
+“It feels like a necessary evil. [...] It’s something that I
+don’t have to do at my W-2 job. It’s something that
+people at W-2 jobs don’t have to think about.” (P5)
+In traditional employment roles, employers withhold taxes from
+employees’ paychecks and remit this to the government as a way
+of fulfilling employees’ income tax obligations [ 43]. Meanwhile,
+independent contractors’ paychecks do not have any income tax
+withheld, so they have increased responsibility to calculate and pay
+their income and self-employment taxes [43].
+Beyond tracking their activity, gig workers must also maintain
+records of information they submit (i.e., income, business expenses,
+mileage) in case they are audited by the IRS: “If something did hap-
+pen where I had to give [the IRS] some documentation, I have this
+[information] written down right here. ” (P9). Participants explained
+that they are conscious of the potential implications of being au-
+dited and, as a result, select a tracking tool that can help them if
+the event were ever to arise:
+“Shipt [the gig platform] wouldn’t track the mileage,
+so that’s why I got Everlance [the tracking app]. [...]
+With Uber Eats, [...] I’d have so many screenshots and
+it wouldn’t be a perfect breakdown of every order ver-
+sus Everlance [that] tracks my whole driving session
+from start to finish. [...] So say, if I got audited and I
+needed to prove that I drove X amount of miles that
+I’m claiming on my taxes, if I didn’t have Everlance,
+then I would probably have to go into Uber Eats and
+go into every order detail and screenshot it.” (P25)
+Here, P25 shared how they opted to use a third-party track-
+ing tool since the platform they worked on, Shipt, did not track
+mileage which they knew was needed for their taxes. On the other
+hand, Uber Eats tracked one-way mileage per job, so it would be
+extra work on their part to calculate total mileage come tax season.
+Other participants shared similar sentiments as they used third-
+party tracking tools to more accurately track mileage, resonating
+with prior studies that noted how gig platforms only track mileage
+when gig workers are actively on the job (i.e., making deliveries
+or traveling with passengers) [ 82,83]. Given its importance for
+taxes, participants emphasized the importance of accurately track-
+ing mileage: "I will gladly pay money for a tool that guarantees that
+at the end of the year, I can get that [mileage] deduction accurate."
+(P7).Participants emphasized the pivotal role of tracking for tax pur-
+poses in maximizing their profits from gig work, considering it the
+most important aspect of their job: “If I didn’t [track mileage], I
+would have not made money.” (P7). This is because their tax de-
+ductible can “add up” (P5) due to how much mileage they put on
+for gig work. This emphasis on mileage tracking stems from the
+significant tax deductions they can claim when reporting mileage
+and business expenses "otherwise there’s a big chunk of money you
+just give away every year” (P10). The “standard mileage rate” is
+used to determine deductible costs related to operating a personal
+vehicle for business purposes [101]. Independent contractors who
+use their personal vehicles for gig work can reduce the taxes they
+pay with this deductible based on this rate and their total business
+mileage from the previous year [82].
+Having their tax-relevant information readily accessible and
+organized on a tracking app is also crucial for workers when it
+comes to filing their taxes. It not only speeds up the tax process
+but also enhances the accuracy of the information they enter on
+their tax forms:
+“[Excel] gives me a huge spreadsheet of every drive
+I made the entire year. [...] I can easily sum up how
+many miles [I drove] for business versus personal.
+[...] You get a number and you punch it into your tax
+software and it spits out a deduction.” (P7)
+In summary, due to their legal and financial tax obligations, gig
+workers place high importance on being able to accurately file taxes,
+maximize tax deductions, and maintain records of their data. To do
+this, they self-track gig work-related income, business expenses,
+and business mileage with carefully selected tools.
+4.2.3 Maintaining vehicles. As independent contractors, gig work-
+ers supply their own vehicles for the job [ 43], something especially
+necessary for rideshare and delivery work. Participants noted the
+accelerated wear and tear on their vehicles due to the nature of
+their jobs: “I bought the car in the beginning of August, started
+ridesharing not long after that. And I’ve already put on 35,000 miles.
+Something that people will [do] in a year, I [do] it in just a few
+months.” (P10). Due to this increased vehicle usage, gig workers also
+track mileage to guide vehicle maintenance schedules. With this,
+they prioritize vehicle upkeep and timely maintenance to manage
+the higher mileage accumulated during gig work:
+“You want to keep track of how your car is, how it’s
+doing. [...] So, you’re gonna be going through the reg-
+ular wear and tear of the car pretty often. Oil changes,
+where most people would do it [...] maybe every two
+to three months or so. On average [for me], every
+three weeks, more or less.” (P10)
+The increased usage and maintenance costs create a domino
+effect, leading participants to monitor their car data (e.g., fuel ef-
+ficiency, mileage, and oil levels) for more efficient vehicle use. P8
+describes tracking and monitoring such data to reduce service cen-
+ter visits and save on maintenance expenses:
+“Say on May 1st, [...] so first of the month, I have that
+much oil life left based on the onboard car computer. It
+tells me I have 50%. And then I monitor this situation
+and check it a month later. So, June 1st, and I saw [it
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+is] 40%. [...] So, 10% decrease in a month. So, what did
+I do? Did I drive harshly or not? I can backtrack and
+see how I can reduce that number.” (P8)
+In summary, gig workers heavily rely on their vehicles for their
+duties, necessitating self-tracking vehicle-related information for
+efficient car maintenance scheduling and vehicle utilization. This
+tracking allows them to maintain accountability and take necessary
+actions for the upkeep of their vehicles, enhancing their autonomy
+as contractors.
+4.2.4 Managing time. Gig workers, as independent contractors,
+must prioritize time management as they are compensated per
+job, receiving income only upon job completion, unlike traditional
+employees who receive hourly or annual salaries [ 43]. This under-
+scores the importance of time for gig workers since their earnings
+depend on the number of completed jobs; efficiency in completing
+one job enables them to take on the next more quickly:
+“Time yourself. Make sure you don’t spend unneces-
+sary time on specific things. Because of the next client
+that you [have, you] don’t know how many minutes
+you go pick the person up. [...] Time is money.” (P11)
+Gig workers can track and monitor time through external tools
+or on the gig platform. However, some gig platforms either do not
+display working time (Table 2) or only track working time. The
+latter is an issue when workers want to see their total working time:
+"DoorDash tracks whenever I’m logged on, but TripLog [tracks]
+from the first thing in the morning to the last thing [in my day]."
+(P1). Tracking total time spent working allows workers to evaluate
+this against their income from a period to understand whether they
+are spending their time effectively and efficiently as this directly
+correlates to their income:
+“Mostly what I do track is time and [income] so that I
+know at least during this time to this time I worked
+on a certain gig and it paid [a] certain amount so that
+I can get my weekly and monthly accommodations.”
+(P16)
+Given the flexibility of gig work, there is also the possibility of
+being constantly on-call or working irregular hours, but this isn’t
+always the most strategic approach. While gig work offers flexible
+scheduling, working with a strategy is ideal to prevent aimless work.
+Participants shared how they manage their time when engaging
+with these platforms by setting hourly income goals and identifying
+the most profitable times to work:
+“The hours spent is more important to me. I really
+want to maximize the amount of money I make per
+hour, so I usually work peak[s] – weekends and dinner
+rushes. [...] I tend to stop working instead of stretching
+out the time because I find that working more hours
+isn’t necessarily gonna earn me the rate that I want,
+it’s picking the right times to do it, that’s generally
+around the dinner rushes.” (P15)
+Tracking and monitoring how long it takes them to complete
+a job also helps maintain flexibility in choosing when and how
+long to work. This is particularly beneficial for workers who juggle
+multiple jobs, responsibilities, and commitments. In the case ofP19, effective handling of diverse responsibilities is evident through
+tracking the time they spend on jobs:
+“[I track time] when I have other gig work to do and
+I have a deadline to accomplish it, [but] I still want
+to do rideshare. So, I dedicate five hours to do the
+particular work [...] sometimes we get lost in time
+and we get lost in [...] discussions with clients and
+stuff like that.” (P19)
+Participants who worked with Amazon Flex also shared how
+they monitor their time with the platform to optimize earnings: ”I
+calculate what my running weekly hours worked are because [...]
+you can’t exceed 40 [hours in seven days] otherwise you won’t
+get any more shifts.” (P14). Participants would track their time to
+make informed choices on which blocks (similar to “shifts” and
+differ based on pay, length, and number of deliveries) they take:
+“You want to make sure that you’re not taking a low-paying block
+for three hours. If that puts you at cap, then the next day you can’t
+work a higher-paying three-hour [block].” (P7).
+In summary, the payment structure and flexible work arrange-
+ments of gig work commodifies workers’ time. As a result, par-
+ticipants shared how they tracked time to evaluate productivity,
+maximize dollars per hour, manage multiple jobs, and manage plat-
+form limitations.
+4.3 Performance accountability to the
+platformized self
+The platformized self refers to the worker’s identity that is influ-
+enced by the activity and relationships (i.e., platform, customer)
+they establish within the gig platform. Workers are lightly man-
+aged by the platform through metrics and ratings (Table 1), which
+can be either system-generated or customer-sourced [ 13]. Along
+with metrics, workers may also see the definitions of these metrics
+(i.e., what they calculate and look at) and infractions they com-
+mit; however, it is not always clear when something will count
+against them and how severely it may affect their metrics. As algo-
+rithmic substitutes for management and performance evaluations,
+gig workers are held accountable for the contents of their records
+[75], necessitating them to actively understand their metrics, moni-
+tor their performance, and maintain a favorable position to avoid
+consequences or retain benefits. Given this, our participants demon-
+strated how they self-tracked to understand how platform metrics
+operate and manage their ratings to avoid consequences.
+4.3.1 Understanding platform metrics and algorithms. Metrics play
+a pivotal role in how gig platforms oversee workers, serving as
+the primary means of evaluation, with P18 likening these to “an
+evaluation from your employer. ” Poor metrics can be interpreted as
+“[showing] you might be troublesome, not really dependent, not
+somebody to trust” (P8). Because of the significant ramifications
+tied to low metrics [ 55,66], participants possessed a clear under-
+standing of their significance and the potential consequences of
+failing to meet them. Alternatively, having good metrics can show
+that they are “on a good path” (P19), as workers can be rewarded
+with advantageous benefits such as better jobs and, therefore, better
+pay [ 13]. Nevertheless, participants were attentive to their metrics
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+as they signaled to the platform and customers how they were
+performing.
+Despite the relevance of platform metrics, information asym-
+metries exist (i.e., algorithmic opacity and lack of earning/pricing
+transparency), hindering workers from fully understanding how
+these metrics and algorithms function [ 27,50,98]. Consequently,
+workers expressed curiosity regarding the tracking and calcula-
+tion of their information prompting them to track and calculate
+whatever information they could (e.g., mileage and income) to
+gain insights into platform operations. For instance, resonating
+with prior work on workers’ mistrust of platform-tracked income
+[10], P5 shared how they checked whether platforms accurately
+summed up income data: "I’ll get a calculator and just make sure
+that they are adding up my income correctly." Despite this, par-
+ticipants shared how they still faced uncertainty as meanings and
+algorithms were not always straightforward. While doing simpler
+calculations allowed them some insight into how platforms calcu-
+lated straightforward data, other metrics with elements determined
+by the platform could only be understood through monitoring these
+metrics’ movements on platforms according to workers’ activities.
+For instance, Amazon Flex employs a vague sliding scale system
+to assess worker performance but is not transparent about what
+moves the scale up or down:
+“Those [platform metrics] I mentioned, somehow
+Amazon lunges it together into a sliding scale of ‘Fan-
+tastic’, ‘Great’, ‘Fair’, ‘At Risk. ’ [...] I have one delivered
+and received issue and one on-time delivery issue, and
+my bar is almost entirely ‘Fantastic’, like I’m just a
+smidge off the top. But other people will get one de-
+livered and received thing and it will knock them all
+the way down to ‘Great’. No idea why, no idea how it
+works. They won’t tell us, they never will.” (P7)
+As workers were unsure how they were rated on this scale, they
+also faced uncertainty surrounding which behaviors would drop
+their ratings and potentially strip them of benefits or leave them
+vulnerable to deactivation: “If it falls down to ‘At Risk’, then the fear
+is that Amazon will kick you off the platform. Lower than ‘Fantastic’
+matters a little bit because Amazon has a rewards program.” (P7).
+Similarly, P10 shared an instance where they noticed their metrics
+remained unchanged despite accepting more orders, leading to
+questions about the evaluation process given its implications for
+their work:
+“You go in and you’ll do everything you can to get
+your acceptance rate up, [but] we don’t see it going
+up. I’ll go in, and I’ll take every single order. Eleven
+orders and my Acceptance Rate will stay the same.
+[...] I just question how does [the algorithm] work? I
+don’t understand [it] sometimes.” (P10)
+Acceptance rate is the percentage of received orders that dri-
+vers accept [ 56]. However, as P10 did not see this metric chang-
+ing despite accepting more orders, they began to question how
+it was really evaluated by platforms. Relatedly, while reviewing
+their platform-tracked data, P3 noticed declining metrics despite
+not actively working so took a month off to monitor this. In that
+period, their metrics continued to drop, causing feelings of distrust:
+"I believe they manipulated their stats [...] I take that as an extralayer of nonsense that is completely unprofessional." (P3). As dis-
+played by our participants, the lack of algorithmic transparency
+impacts the worker-platform relationship by fostering distrust, cre-
+ating uncertainty, and instilling fear as workers believe companies
+withhold information without apparent reason. This aligns with
+prior studies highlighting gig workers’ frustration with opaque
+algorithms [50, 98].
+In summary, given the potential consequences of poor metrics,
+workers displayed heightened attention to them. By self-tracking
+the same data points as platforms and monitoring their metrics,
+workers made efforts to understand how algorithms operated and,
+based on their understanding, adjusted their behavior to maintain
+or improve them.
+4.3.2 Acting according to metrics. Participants actively monitored
+metrics to safeguard their reputation, adjusting their behavior to
+maintain good standing and mitigate potential repercussions. Relat-
+edly, Mosseri [ 75] discusses “reputation auditing” where gig work-
+ers identify and address inaccuracies on gig platforms’ records.
+Sannon et al. [ 99] also discuss reactive uses of self-tracked data
+for self-protection, i.e., to contest pay discrepancies, use in pay
+disputes, and protect against false claims. In addition to this, we
+found participants proactively monitor their metrics to maintain
+good standing, even before identifying inaccuracies, and remain
+vigilant to potential consequences or poor ratings:
+“If my rating goes lower, I definitely wanna be careful
+and try not to do something that I did last time. Just to
+be sure that it stays there. Same with the acceptance
+rate because if you decline too many orders, if your
+acceptance rate goes below 50%, then you’re not pri-
+oritized for high-paying orders. So, it definitely keeps
+you in check. At least for me personally, I look at it
+all the time.” (P4)
+To proactively monitor metrics, another participant described
+taking notes of their deliveries to remember instances that might
+negatively impact their metrics. These notes specified incidents
+that prevented the worker from completing a delivery and what
+consequence they anticipated, for example:
+“I had one [delivery] where a business was closed [...]
+because the entire office got COVID. So I made a note
+just so I can remember to check my standings in a
+few days to see if it counted against me.” (P7)
+These served as bookmarks for potential issues such as not re-
+ceiving payment or getting deliveries marked late or missing. As
+P7 put it: “things that are abnormal that Amazon might come and
+yell at me about.” In these instances, the participant was aware of
+actions that may result in infractions in the eyes of the platform,
+potentially impacting their metrics. By being proactive about pre-
+venting poor metrics, participants demonstrated how they avoid
+falling into a bad position which is crucial as this has implications
+on their income and experience with gig work.
+Participants also shared how they use tracked data (e.g., time
+they completed a job) and photos of successfully delivered packages
+during disputes, similar to prior work on reputation auditing [ 75].
+In addition, we found that if workers can’t successfully dispute a
+mark against them, they may opt to wait for its removal from their
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+record. Certain platforms like Amazon Flex automatically remove
+marks after a certain number of deliveries, prompting workers to
+track and monitor their deliveries to “gauge of how long it’s going
+to take to work those issues off [their] standings” (P7).
+In summary, participants displayed a heightened awareness of
+their metrics and the associated consequences. As those being eval-
+uated, they are then accountable for maintaining favorable metrics,
+whether through continuous monitoring for maintenance or disput-
+ing with self-tracked data. This behavior stems from concerns about
+income loss from platform-sanctioned penalties (e.g., receiving un-
+favorable orders) or job insecurity (e.g., deactivation). Leveraging
+self-tracking enabled them to proactively manage metrics by in-
+creasing awareness and holding themselves accountable for their
+performance, customer satisfaction, and platform compliance.
+5 Discussion
+In our findings, we illustrated how gig workers self-track to main-
+tain accountability across three distinct identities. First is the holis-
+tic self, where they maintain personal accountabilities of learning
+their capabilities in gig work, managing their work/life balance, and
+acting in their self-interest. Second is the entrepreneurial self, char-
+acterized by their being self-employed individuals managing fiscal
+and resource accountabilities. Last is the platformized self, as they
+navigate and negotiate performance-related accountabilities with
+the platform and customers. Participants shared how due to insuffi-
+cient platform tracking (summarized in Table 4) they self-tracked
+various types of data (summarized in Table 5) to manage these
+different accountabilities. Below, we reflect on the accountable self
+that gig workers embody and the implications of our findings as
+they relate to the invisible labor of self-tracking and asymmetries
+present in gig work. We then offer design implications to support
+self-tracking for gig workers’ multi-dimensional accountability.
+5.1 The accountable self in gig work
+Our findings describe how gig workers embody an ‘accountable
+self’ as they have “the capacity and willingness [...] to give ex-
+planations for [their] conduct” [ 68]. Their faceted identities are
+organized considering gig workers’ simultaneous involvement in
+multiple roles with distinct responsibilities [ 12]. Faceted identities
+are influenced by social context as individuals play diverse roles,
+navigate various relationships, and manage distinct expectations in
+different social settings [ 24,32]. In the context of gig workers’ holis-
+tic and entrepreneurial selves, these identities emerged due to the
+unique responsibilities they bear toward themselves and external
+stakeholders (e.g., family, government). Furthermore, participants
+in our study referred to the gig work they do as a business, seeing
+it as both an activity and a distinct business entity, aligning with
+neoliberalism, a socio-economic ideology that views the self as an
+enterprise that is “both a member of the firm and as itself a firm”
+[8]. Within this framework, individuals work within organizations
+and operate as independent enterprises, actively managing various
+business-related accountabilities [ 69], i.e., fiscal and resource ac-
+countabilities of the entrepreneurial self. Meanwhile, gig workers’
+platformized selves can be seen as a form of performance of self-
+presentation [ 37], as they must navigate outward-facing metrics
+visible to algorithms and customers [77].Understanding how gig workers navigate their accountabilities
+within a network of stakeholders (Figure 1) highlights the dynamics
+within the gig economy. This knowledge is relevant for academic
+exploration and has practical implications for policymakers, busi-
+nesses, and labor advocates seeking to address the challenges and
+opportunities presented by this landscape.
+Within the accountable self, gig workers display accountability to
+both external entities and themselves. In being self-accountable, in-
+dividuals assume responsibility for their actions and decisions with-
+out external observation or enforcement [ 35]. The independence
+and atomization of gig work [ 114] led to primarily self-driven and
+self-managed accountabilities across their various identities. While
+prior literature has focused more generally on self-management,
+i.e., studying how self-management is applied across various activ-
+ities and goals [ 1,2,25,36,49], we focused on a specific form of
+self-management where gig workers use self-tracking to maintain
+accountability.
+In the holistic self, gig workers demonstrate self-accountability
+as their rational selves are accountable for maintaining their emo-
+tional selves by maintaining an awareness of their activity, eval-
+uating and reflecting on their performance, acknowledging their
+achievements, and considering various perspectives on their work.
+In the entrepreneurial self, gig workers, as self-employed individu-
+als, are self-accountable to their businesses as a separate entity from
+themselves. However, even when gig workers are accountable to
+external parties, explanations or evaluations of one’s work are not
+imminent, underscoring the role of self-accountability in managing
+gig workers’ obligations. For example, regarding tax responsibili-
+ties, repercussions typically surface in the event of an audit. This
+necessitates gig workers’ self-accountability in proper and timely
+tax filing. Similarly for the platformized self, disputing poor metrics
+for performance accountability relies on workers initiating the dis-
+pute process. Resonating with Ghanem & Castelli’s [ 36] findings on
+the connection between identity and self-accountability in business
+leaders, we find that gig workers’ external accountabilities (i.e.,
+to the government, platforms, and customers) increase their felt
+self-accountability as they recognize the importance of meeting
+these external obligations to maintain their income and job.
+Our findings underscore the multi-dimensional nature of gig
+workers’ tracking-mediated accountabilities. Participants used self-
+tracking to manage the multi-dimensional accountabilities they
+bear. This differs from the focus of existing PI research which has
+focused on tracking or affecting a singular aspect of the self, i.e.,
+health [ 33], fitness [ 107], or productivity [ 53]. While researchers
+have also explored integrating multiple sources of data, these sim-
+ilarly focus on deriving insights that are relevant to a singular
+dimension, i.e., health [ 59] or wellbeing [ 4]. PI researchers have
+also considered how self-tracking systems can hold individuals
+accountable for their behavior change goals [ 31] through the social
+accountability that manifests through publicly posting one’s own
+tracked data [ 78,81,112], the support they receive from posting
+[20,28,78], and in-app rankings [ 39]. In contrast, our findings il-
+lustrate that gig workers employ self-tracking to simultaneously
+manage a broad spectrum of accountabilities that extend beyond
+holding oneself responsible for behavioral change goals. Our par-
+ticipants felt accountable for a varied group of people including
+themselves, their families, and other entities. Our findings also
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+Figure 1: The Accountable Self of Gig Workers. Continuous lines represent gig workers’ accountability to various parties, while broken lines
+depict potential accountability among these parties. Within the holistic self, the rational self is accountable for the emotional self, as discussed
+in 5.1. Platforms are accountable to the government for legal and regulatory compliance. Platforms and customers hold mutual accountability,
+primarily focused on trust and reliability.
+expand on accountability research that largely emphasizes individ-
+uals’ obligations to external parties, which is the more traditional
+view of accountability [ 36]. For gig workers, self-tracking activi-
+ties are not solely about external obligations; they also underscore
+accountability to oneself.
+Although gig workers must manage a wide spectrum of ac-
+countabilities, our findings indicate that gig platform designs inade-
+quately support gig workers’ accountability identities. Participants
+consistently highlighted instances where gig platform tracking falls
+short in capturing information crucial for maintaining account-
+ability across various facets of their work (Table 4). As a result,
+participants sought external tracking tools to fill these gaps. With
+these tools, participants could track and sum up data from theentire period they work and test how apps track or even manu-
+ally input data to ensure the accuracy and comprehensiveness of
+tracked data. Having to self-track thus places a burden on workers
+to invest time in selecting and customizing tools to meet their ac-
+countability management needs, such as in the case of P25. This
+can be seen as a transfer of accountabilities primarily driven by the
+absence of adequate design support for the multi-dimensional track-
+ing needs of gig workers. Considering gig workers must navigate
+multiple dimensions of accountability, external tools become neces-
+sary to address this complex accountability landscape. We expand
+on designing for multi-dimensional accountability management on
+self-tracking tools in 5.4.
+Table 4: Summary of insufficient data tracking or presentation by gig working platforms.
+Expenses Income Mileage
+Personal and business expenses are not tracked by
+the gig platform.– Income is often separated by day or task, requiring
+extra effort on the worker’s side to transfer this
+information and calculate or view it in different
+periods (i.e., weekly, monthly, per hour).
+– Income may be miscalculated by the platforms.– If tracked by the platform (Table 2), mileage is
+often separated by day or job, requiring extra effort
+on the worker’s side to transfer this information to
+be able to calculate or view it in different periods (i.e.,
+weekly, monthly, per hour).
+– Only calculated when the driver is actively working
+on an assignment; not calculated by the platform
+when drivers are driving and waiting to get a new
+assignment.
+Working Time Qualitative Experiences Platform Metrics
+If tracked by the platform (Table 2), time spent
+working is often separated by day or job, requiring
+extra effort on the worker’s side to transfer this
+information to be able to evaluate it alongside other
+factors (i.e., mileage, income).Qualitative experiences of the worker (e.g., personal
+accounts and notes on deliveries or clients) are not
+collected by the gig platform.There is a lack of transparency in how metrics are
+tracked, calculated, and used by the platform.
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+Table 5: Summary of data and analyses gig workers use to manage their different accountabilities.
+Personal Accountabilities Financial and Resource Accountabilities Performance Accountabilities
+Purpose How Purpose How Purpose How
+To learn what the job
+and platform are like– Calculating profit
+(income, expenses), dollars
+per mile (income, mileage),
+and dollars per hour
+(income, time) to know
+their earning capacity
+– Tracking expenses,
+income, mileage, and time
+to identify patterns in dataTo determine the
+profitability and
+sustainability of their
+work– Tracking income and
+expenses to calculate how
+much they are earning
+(income, expenses), after
+considering financial
+expenses.
+– Calculating dollar per
+hour (income, time) and
+dollar per mile (income,
+mileage) to evaluate
+profitability on a smaller
+scaleTo understand how
+platform algorithms
+calculate certain
+informationPersonally tracking mileage
+and income to see if these
+are being fairly calculated
+by the platform
+To know if a job is
+worth it– Identifying profit (income,
+expenses) to see if they are
+earning money from the job
+– Calculating dollars per
+hour (income, time) or
+dollars per mile (income,
+mileage) to know if they are
+earning enough per hour to
+sustain their financial needsFor tax needs (i.e.,
+filing, calculating
+deductions, audits)– Tracking and keeping
+records of income, business
+expenses, and mileage, as
+required by the IRS
+– Tracking and keeping
+records of business
+expenses and mileage, as
+these can be used for tax
+deductionsTo dispute poor
+metrics (i.e., falling
+below a set threshold)
+which can lead to
+consequences (i.e.,
+deactivation)Tracking personal
+experiences while working
+with photos and notes (i.e.,
+on businesses and
+restaurants) to provide
+additional documentation
+for job completion or to
+explain reasons for
+non-completion
+To manage work/life
+balance– Tracking time to set
+boundaries on work
+– Calculating profit (income,
+expenses) to track their
+progress on financial goalsTo monitor vehicle
+wear and tearTracking vehicle
+maintenance schedules,
+mileage, oil levels, fuel
+efficiency, and other
+vehicle-related information
+to stay on top of routine
+maintenance tasks and
+ensure optimal vehicle
+performanceTo estimate when
+infractions (e.g., late
+or missing deliveries)
+will be removed from
+their recordsTracking the total number
+of orders within a certain
+period to recognize when
+they have improved their
+standing with platforms
+To manage time
+between other jobs or
+personal
+commitmentsTracking and monitoring
+time to identify how long
+they have been working
+particular jobs or to set
+limits on workingTo monitor and
+review performance
+to prevent poor
+metrics (i.e., falling
+below a set threshold)Monitoring platform
+metrics to be able to adjust
+behavior before metrics
+worsen
+To monitor
+productivity and
+efficiency– Calculating dollars per
+hour (income, time) to
+assess the value of their
+time and resources in
+relation to their overall
+output and income
+– Tracking how much time
+they spend working and
+what they get done to
+ensure they are using their
+time wisely
+5.2 Self-tracking as invisible labor
+Our research highlights gig workers’ self-tracking practices as a
+form of invisible labor, emphasizing the significant effort and in-
+vestment inherent in this activity. As our findings indicate, gig
+workers have to expend considerable effort in tracking due to their
+multi-dimensional accountabilities and the insufficiency of gig plat-
+forms in supporting these needs with adequate data, as summa-
+rized in Table 4. To manage their accountabilities, gig workers must
+carefully select tools that fit their specific needs. They are also re-
+sponsible for identifying the specific data to track and conducting
+meticulous analyses, both of which are summarized in Table 5. Ad-
+ditionally, they manage other tracking-related responsibilities such
+as retaining records and reviewing past performance. Despite theconsiderable effort invested in self-tracking practices, gig workers
+remain uncompensated for the additional workload they entail.
+Gig workers are primarily paid on a per-task basis, which means
+they are not compensated for managing activities beyond the gig
+task. This payment structure perpetuates issues of unpaid, invisible
+labor necessary to participate in the gig economy, e.g., emotional
+and temporal labor [ 94], self-protective strategies [ 99], and work
+engagements [ 108]. As independent contractors, gig workers see
+accountabilities that are usually handled by one’s place of employ-
+ment transferred to the individual. These include ensuring tax com-
+pliance, covering business expenses, maintaining personal vehicles
+for work, and managing work schedules, all of which can be self-
+managed with self-tracking. While previous studies on independent
+contractor self-management have largely focused on strategizing
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+[1,2,49], we also found gig drivers self-manage by tracking to fulfill
+entrepreneurial self and platformized self accountabilities. Here,
+the concept of self-tracking shifts from a managerial standpoint to
+viewing the worker at the intersection of labor, datafication, and
+self-actualization.
+As gig workers self-track to manage shifted accountabilities,
+we observed how self-tracking is done to navigate the unclear
+boundary between contractors and employees as platforms do not
+provide sufficient tracking features to support the management of
+multi-dimensional accountabilities. In the U.S., the murky bound-
+ary between employee and contractor that gig workers navigate
+is rooted in the more commonly used binary methods of classify-
+ing workers as either independent contractors or employees [ 93].
+This poses a problem as gig workers share similarities with both
+employees and independent contractors [ 43]. Gig platforms benefit
+from classifying gig workers as contractors as they don’t have to
+provide mandated benefits and protections such as health insur-
+ance, minimum wage, and unemployment benefits [ 14,93]. One of
+the key factors in the most commonly used worker classification
+tests in the U.S. (Common Law Test, ABC test, Economic Real-
+ities test) for determining worker classification is the degree of
+control and independence a worker has [ 84,90,93]. Some argue
+that platform metrics essentially control workers similar to tradi-
+tional employees, evident in pervasive algorithmic management
+and the fostered economic dependency on gig work [ 17]. Partici-
+pants in our study demonstrated how they manage these forms of
+control by understanding and managing their performance metrics
+(platformized self) and tracking finances to maximize their income
+(entrepreneurial self). While outdated, binary methods of classi-
+fying workers that don’t effectively align with the gig economy
+structure [ 43,64,90,113] persist, it’s likely that we will see minimal
+changes in how gig workers are compensated. However, a trans-
+formation in these systems is unfolding as several cases have been
+raised surrounding the classification of gig workers with some suc-
+cessfully reclassifying workers as employees and others granting
+them employee-like benefits [14, 43, 113].
+Reclassifying workers to receive benefits similar to employees
+could transform how they self-track. If gig workers were to oper-
+ate more like employees rather than business owners, tracking for
+their entrepreneurial selves could change as they receive a more
+stable income, more consistent hours, and would potentially use
+company-owned resources for work. Harris & Krueger [ 43] pro-
+pose an independent worker classification as a "middle ground
+between traditional employment and independent contractors,"
+offering increased protections and benefits comparable to those en-
+joyed by employees, which could have implications on gig workers’
+self-tracking. First, platform companies withholding taxes could
+distribute tax accountability, reducing the administrative burden of
+tax filing. This could bring changes to the timing of tax payments,
+modifications to income calculation, and a less stressful tax manage-
+ment process that currently relies on workers’ self-tracking. Second,
+the implementation of wage and hour protections could potentially
+reshape how gig workers track and manage their income and time,
+introducing more structure and predictability. In summary, reclas-
+sifying gig workers could reduce their accountabilities, lessening
+the necessity for extensive tracking.Our findings also depict self-tracking as a burdensome neces-
+sity for individuals to protect and preserve their jobs, underscored
+by the legal and financial implications of not tracking. We found
+that gig workers track their income and mileage to stay account-
+able for their financial and tax-related obligations. P5 highlighted
+the burden of tracking, a task absent in traditional workplace em-
+ployment but necessary in gig work. Failure to track jeopardizes
+tax filing accuracy and income optimization, resulting in financial
+losses and the risk of IRS audits and fines. By putting individuals in
+charge of their businesses, the gig economy seems to encapsulate
+the ideal of neoliberalism, which centers on government deregula-
+tion and emphasizes personal responsibility [ 34]. However, it fails
+to acknowledge the power imbalances inherent in the gig economy
+notably skewed in favor of the platform. Workers thus face disad-
+vantages as they are not fairly compensated for essential work that
+sustains their personal business and the platform ecosystem. The
+gig economy, thus, challenges the sustainability of neoliberalism
+as workers see increased accountabilities which they are not fairly
+compensated for.
+Given the issue of unnoticed and uncompensated self-tracking
+labor, we would like to highlight worker advocacy groups like
+the National Domestic Workers Alliance Gig Worker Advocates1
+which prioritize fair compensation for gig workers. Advocacy in the
+gig economy can unveil the invisibility of these practices, pushing
+for recognition and compensation of essential tasks beyond gigs to
+sustain their jobs and adhere to their legal duties.
+5.3 Self-tracking to mitigate information and
+power asymmetries
+Self-tracking holds a nuanced role for gig workers. While high-
+lighting the issue of uncompensated labor and the broader struc-
+tural issues within gig work platforms is crucial, it’s worth noting
+that tracking can be a means of empowerment and negotiation for
+workers as they mitigate the information and power asymmetries
+prevalent in the gig economy. Platforms notably withhold useful
+information (i.e., algorithmic payment determinations, job assign-
+ments, performance evaluations) to maintain control over workers
+[27,50,63,79,98]. We found that as gig workers track their per-
+formance and activity, they generate knowledge about themselves
+and the platforms they work for, helping them mitigate pervasive
+information and power asymmetries.
+Tracking offers workers an objective overview of their perfor-
+mance and activity, enabling self-assessment. This is beneficial as
+platforms have deemphasized the true costs of platform work and
+emphasized gross earnings without considering gas, maintenance,
+and depreciation [ 63]. An accurate and historical view of their per-
+formance (i.e., reviewing income in relation to time spent, miles
+driven, or jobs done) lets workers know what they are capable of
+doing and earning with gig work. With access to historical earnings
+data, they can gain insights into a platform’s profitability, equipping
+them to decide whether to work more or less with that platform. For
+instance, P14’s consistent income tracking revealed pay rate fluctu-
+ations and empowered them to make an informed decision about
+their engagement with that platform. The knowledge workers gain
+can mitigate information asymmetries related to pay and earning
+1https://www.gigworkeradvocates.org/
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+transparency as it provides insights into performance trends, allow-
+ing them to plan their work hours and make job choices based on
+past performance data. This grants them both an objective perfor-
+mance perspective and insights into the gig platforms, empowering
+them to make informed decisions about their work lives.
+As workers gain knowledge of themselves and their jobs through
+self-tracking (Table 5), they gain autonomy and control over their
+professional lives. While platform metrics control and hold workers
+accountable, external self-tracking allows workers to subvert this
+control to some extent, e.g., disputing customer and platform issues
+for self-protection [ 75,99] or collectively demystifying blackbox
+algorithms [ 9,103]. Thus, self-tracking is useful but necessary as
+a form of self-preservation and self-protection. This is despite the
+observed autonomy paradox in gig work that contrasts the expec-
+tations of autonomous and flexible work arrangements against the
+reality of workers experiencing surveillance, control, and a lack of
+access to information [ 51,63,79]. The enhanced autonomy they
+experience draws similarities to PI studies where individuals are
+empowered to manage their health using self-tracking [33, 88].
+However, it’s crucial to note that workers cannot completely
+eliminate information and power asymmetries through self-
+tracking; rather, tracking empowers them to address and allevi-
+ate challenges only to some extent. Power imbalances persist not
+only within gig work structures but also extend into the design of
+platform metrics, stemming from broader contexts such as legal
+and economic frameworks. Our findings highlight the insufficient
+support provided by platforms (Table 4), underscoring existing
+power imbalances stemming from the lack of worker-centered de-
+sign on gig platforms’ metrics and tracked data. Platform metrics
+replace human supervisors as performance evaluators and, thus,
+primarily exist to surveil workers rather than enable them to make
+informed decisions, underscoring the autonomy paradox in gig
+work. Gig platforms prioritize control and compliance – show-
+casing surveillance-centered design – over supporting workers’
+autonomy and wellbeing, i.e., constant monitoring [ 2], punitive
+practices [13], and a lack of transparency [50].
+This underscores the significance of worker rights advocacies
+like Gig Workers Rising2which strive to establish enhanced legal
+and economic structures including protections and benefits like
+health insurance, job security, wage protection, and fair and trans-
+parent labor practices and policies. These causes relate to projects
+like Shipt Calculator [ 9] that seek to empower gig workers through
+collective data tracking and sharing to increase wage transparency.
+The tool employs collective self-tracking to audit and deconstruct
+the algorithmic blackbox, which could shed light on additional
+ways workers can empower themselves and mitigate existing asym-
+metries through tracking. Current individualized self-tracking tools
+also complement efforts for data collectives as a way to address
+asymmetries in the gig economy [ 46,72,103,117]. While individual
+self-tracking empowers workers to manage their affairs and gain
+personal insights, data collectives offer the opportunity to view a
+broader perspective. This can reveal industry-wide trends, highlight
+common challenges faced by gig workers, and serve as a powerful
+tool for advocacy and collective bargaining. By considering how
+self-tracking can support advocacy work or data collective efforts,
+2https://gigworkersrising.org/there is potential to utilize existing activities to not only improve
+the conditions of individual gig workers but also contribute to sys-
+temic changes within the gig economy, fostering a more equitable
+and transparent future.
+5.4 Design implications for supporting gig
+workers’ multi-dimensional tracking
+Our findings detail how it can be burdensome for gig workers to self-
+track to independently manage multi-dimensional accountabilities.
+This is exemplified by the necessity of tracking to meet tax and
+financial obligations, and the task of selecting and customizing
+a variety of tools and data for tracking and analysis. However,
+existing PI literature predominantly focuses on tracking singular
+dimensions of the self. In light of this, we offer design implications
+for supporting multi-dimensional self-tracking. We propose worker-
+centric self-tracking systems to empower gig workers in managing
+various accountabilities, prioritizing worker needs and autonomy
+in design. Prior research on worker-centered design in the gig
+economy discussed incorporating workers’ visions into platform
+design [ 91], addressing the multifaceted challenges gig workers face
+[62], and democratizing algorithmic design [ 9]. We discuss design
+implications related to data collection, analysis, and transparency in
+both gig platform-based and third-party tracking systems to reduce
+the burden of multi-dimensional accountability management.
+Design efforts are needed to explore customizable data collection
+methods, allowing gig workers to adapt them to their unique goals,
+needs, and interests. This encompasses choosing what to track (i.e.,
+income, job details), how to track (i.e., degree of detail), data sources
+(i.e., gig platform, third-party app), and acquisition methods (i.e.,
+automatic, manual). This customization is particularly relevant to
+the three dimensions of the self that gig workers are accountable
+to as individuals can tailor their tracking based on their priorities.
+For example, someone more curious about understanding platform
+dynamics might collect more data related to their performance
+accountabilities. Additionally, participants highlighted the use of
+multiple tracking tools for various information. Importing and in-
+tegrating data from diverse sources can enhance the generation of
+comprehensive insights, support informed decision-making, and
+address gig workers’ diverse tracking needs, thereby reducing in-
+put and analysis efforts. The implementation of comprehensive
+integration features can streamline the process, reducing the time
+and effort required for gig workers to select and tailor their tools
+and data.
+Designing for flexible data analysis could also empower indi-
+viduals to extract relevant insights from their data based on their
+preferences. Participants collected diverse data types including
+quantitative measurements (i.e., mileage, time, income), qualitative
+notes (i.e., notes on deliveries or clients), and multimedia content
+(i.e., map data, photos). Analyzing multiple data types alongside one
+another can enhance their ability to interpret their data within its
+broader context, easing the effort associated with combining differ-
+ent data from various sources. Furthermore, the customizability of
+data analysis would enable workers to select what data they analyze
+together and how they will be analyzed. Various data visualization
+options (i.e., different time frames and visualization types) could ac-
+commodate users’ unique needs, interests, and data literacy levels,
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+facilitating a deeper understanding of their data and the identifi-
+cation of meaningful patterns. The inclusion of more flexible data
+analysis features could also enhance support for gig workers as they
+navigate the different aspects of their worker identity, as detailed in
+this study. By combining relevant data and subsequently highlight-
+ing elements most crucial to their needs and interests, this approach
+caters to their diverse priorities. Whether they are wellbeing-related
+considerations for their holistic self, business-related insights for
+their entrepreneurial self, or metric-related observations for their
+platformized self, this recommendation addresses the multifaceted
+dimensions of their work. Overall, the incorporation of customiz-
+able data analysis methods not only reduces the time-consuming
+aspects of self-tracking but also facilitates a more nuanced under-
+standing of their data, enabling gig workers to identify meaningful
+patterns with greater ease.
+Finally, offering data transparency could support individuals’
+understanding of how their information is handled and used. For
+platform metrics, and of relevance to their platformized self, this
+entails understanding how and why their metrics are tracked. Our
+study participants expressed uncertainty regarding the purpose
+and calculation of platform metrics, which affected workers’ ability
+to evaluate their performance according to the platforms’ stan-
+dards. Furthermore, platforms and third-party tools should also
+consider transparency surrounding how they handle (i.e., collect,
+store, use) and process (i.e., protect, anonymize) data. The knowl-
+edge this transparency would provide can increase worker agency
+as they understand the implications of being monitored and em-
+power individuals to make informed decisions regarding their data
+and interactions with tools that track their activity.
+6 Limitations and Future Work
+We acknowledge that our study has several limitations. First, the
+ongoing debate surrounding the classification of gig workers in the
+U.S. [ 14,100] may affect the relevance of our findings if their clas-
+sification would change in any way. A shift in classification could
+alter gig workers’ accountabilities and their use of self-tracking
+tools, as we detailed in section 5.2. Second, our study focused on the
+experiences of gig drivers in the U.S., so the findings may not com-
+pletely apply to other gig workers (i.e., freelance workers, Airbnb
+hosts), and they may also vary depending on the legal responsi-
+bilities of workers in different countries. For example, variations
+in tax regulations may affect the relevance of the section on tax-
+related accountabilities. Future work can explore self-tracking in
+other gig work contexts, especially those significantly different
+from gig drivers or in other countries. Third, although we made
+efforts to diversify our participant pool by recruiting both online
+and offline, a portion of our participants found our study through
+Reddit, potentially favoring users with a heightened awareness
+of gig worker-related accountabilities and self-tracking practices.
+Lastly, as our study is qualitative, we encourage further investiga-
+tion into gig workers’ self-tracking through alternative research
+methods and with larger sample sizes.
+7 Conclusion
+Our study has revealed how gig workers self-track to effectively
+manage the multiple accountabilities associated with their variousidentities. We connect this practice to neoliberalism, highlight-
+ing the unpaid self-tracking labor that gig workers undertake to
+sustain their employment. While acknowledging self-tracking’s
+supportive role, it’s crucial to emphasize its burdensome necessity
+for gig workers to thrive and continue working in the gig economy.
+Furthermore, we explore how gig workers self-track to address
+inherent imbalances in the gig economy which often hinder their
+success. This is evident in their struggles with unfair compensation
+and the extensive effort required to regain autonomy over their
+professional lives, which are managed by self-tracking. Finally,
+we propose design considerations for platforms to better support
+workers’ multidimensional tracking needs.
+Acknowledgments
+We extend our sincere appreciation to the anonymous reviewers
+whose constructive feedback significantly contributed to the refine-
+ment and improvement of our manuscript. Our gratitude extends
+to the 25 interview participants for their support and participa-
+tion in this study. Special thanks are also extended to the owners,
+managers, and employees of local establishments, and subreddit
+moderators who graciously allowed us to promote our research.
+Their cooperation has been instrumental in the success of our study.
+References
+[1]Juan Carlos Alvarez de la Vega, Marta E. Cecchinato, and John Rooksby. 2022.
+Design Opportunities for Freelancing Platforms: Online Freelancers’ Views
+on a Worker-Centred Design Fiction. In Proceedings of the 1st Annual Meeting
+of the Symposium on Human-Computer Interaction for Work (CHIWORK ’22) .
+Association for Computing Machinery, New York, NY, USA, 1–19. https://doi.
+org/10.1145/3533406.3533410
+[2]Juan Carlos Alvarez de la Vega, Marta E. Cecchinato, John Rooksby, and Joseph
+Newbold. 2023. Understanding Platform Mediated Work-Life: A Diary Study
+with Gig Economy Freelancers. Proceedings of the ACM on Human-Computer
+Interaction 7, CSCW1 (Apr 2023), 106:1–106:32. https://doi.org/10.1145/3579539
+[3]Lyndsey L. Bakewell, Konstantina Vasileiou, Kiel S. Long, Mark Atkinson, Helen
+Rice, Manuela Barreto, Julie Barnett, Michael Wilson, Shaun Lawson, and John
+Vines. 2018. Everything We Do, Everything We Press: Data-Driven Remote
+Performance Management in a Mobile Workplace. In Proceedings of the 2018
+CHI Conference on Human Factors in Computing Systems (CHI ’18) . Association
+for Computing Machinery, New York, NY, USA, 1–14. https://doi.org/10.1145/
+3173574.3173945
+[4]Frank Bentley, Konrad Tollmar, Peter Stephenson, Laura Levy, Brian Jones,
+Scott Robertson, Ed Price, Richard Catrambone, and Jeff Wilson. 2013. Health
+Mashups: Presenting Statistical Patterns between Wellbeing Data and Context in
+Natural Language to Promote Behavior Change. ACM Transactions on Computer-
+Human Interaction 20, 5 (Nov 2013), 30:1–30:27. https://doi.org/10.1145/2503823
+[5]Paula Blomqvist and Ulrika Winblad. 2022. Contracting out welfare services:
+how are private contractors held accountable? Public Management Review 24, 2
+(Feb 2022), 233–254. https://doi.org/10.1080/14719037.2020.1817530
+[6]Rebecca Boden. 1999. Figure it out yourself: financial reporting, accountability
+and the self-employed. Critical Perspectives on Accounting 10, 1 (Feb 1999), 37–62.
+https://doi.org/10.1006/cpac.1998.0198
+[7]Virginia Braun and Victoria Clarke. 2019. Reflecting on reflexive thematic
+analysis. Qualitative Research in Sport, Exercise and Health 11, 4 (Aug 2019),
+589–597. https://doi.org/10.1080/2159676X.2019.1628806
+[8]Wendy Brown. 2015. Undoing the Demos: Neoliberalism’s Stealth Revolution .
+MIT Press.
+[9]Dan Calacci and Alex Pentland. 2022. Bargaining with the Black-Box: Design-
+ing and Deploying Worker-Centric Tools to Audit Algorithmic Management.
+Proceedings of the ACM on Human-Computer Interaction 6, CSCW2 (Nov 2022),
+428:1–428:24. https://doi.org/10.1145/3570601
+[10] Lindsey D. Cameron. 2022. “Making Out” While Driving: Relational and Ef-
+ficiency Games in the Gig Economy. Organization Science 33, 1 (Jan. 2022),
+231–252. https://doi.org/10.1287/orsc.2021.1547
+[11] Antonio Casilli and Julian Posada. 2019. The Platformization of Labor and Society .
+Oxford University Press, 293–306. Google-Books-ID: w0KjDwAAQBAJ.
+[12] Brianna Barker Caza and Marie Gee Wilson. 2009. Me, myself and I: The benefits
+of work-identity complexity . Psychology Press, 99–123.
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+[13] Ngai Keung Chan. 2022. Algorithmic precarity and metric power: Managing
+the affective measures and customers in the gig economy. Big Data & Society 9,
+2 (Jul 2022), 20539517221133779. https://doi.org/10.1177/20539517221133779
+[14] Miriam A. Cherry. 2023. An Update on Gig Worker Employment Status Across
+the United States Symposium - Gig Economy. University of the Pacific Law
+Review 54, 1 (2023), 21–34.
+[15] Eun Kyoung Choe, Nicole B. Lee, Bongshin Lee, Wanda Pratt, and Julie A.
+Kientz. 2014. Understanding quantified-selfers’ practices in collecting and
+exploring personal data. In Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems . ACM, Toronto Ontario Canada, 1143–1152. https:
+//doi.org/10.1145/2556288.2557372
+[16] Chia-Fang Chung, Nanna Gorm, Irina A. Shklovski, and Sean Munson. 2017.
+Finding the Right Fit: Understanding Health Tracking in Workplace Wellness
+Programs. In Proceedings of the 2017 CHI Conference on Human Factors in Com-
+puting Systems (CHI ’17) . Association for Computing Machinery, New York, NY,
+USA, 4875–4886. https://doi.org/10.1145/3025453.3025510
+[17] Travis Clark. 2020. The Gig Is up: An Analysis of the Gig-Economy and an
+Outdated Worker Classification System in Need of Reform. Seattle Journal for
+Social Justice 19, 3 (2020), 769–808.
+[18] Victoria Clarke and Virginia Braun. 2021. Thematic Analysis: A Practical Guide .
+SAGE Publications Ltd. https://www.torrossa.com/it/resources/an/5282292
+[19] Cristiano Codagnone, Federico Biagi, and Fabienne Abadie. 2016. The Passions
+and the Interests: Unpacking the “Sharing Economy” . http://dx.doi.org/10.2139/
+ssrn.2793901
+[20] Sunny Consolvo, Katherine Everitt, Ian Smith, and James A. Landay. 2006. Design
+requirements for technologies that encourage physical activity. In Proceedings
+of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’06) .
+Association for Computing Machinery, New York, NY, USA, 457–466. https:
+//doi.org/10.1145/1124772.1124840
+[21] Valerio De Stefano. 2016. The Rise of the “Just-in-TIme Workforce”: On-Demand
+Work, Crowdwork, and Labor Protection in the “Gig Economy”. Comparative
+Labor Law & Policy Journal 37, 3 (2016), 471–503.
+[22] Gianluca F. Delfino. 2022. Can politicians jeopardize public–private partner-
+ships? The case of the Mottarone cable car crash. Public Administration Review
+82, 6 (2022), 1192–1197. https://doi.org/10.1111/puar.13524
+[23] Elena Di Lascio, Shkurta Gashi, Juan Sebastian Hidalgo, Beatrice Nale, Maike E.
+Debus, and Silvia Santini. 2020. A Multi-Sensor Approach to Automatically
+Recognize Breaks and Work Activities of Knowledge Workers in Academia. Pro-
+ceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
+4, 3 (Sep 2020), 78:1–78:20. https://doi.org/10.1145/3411821
+[24] Joan Morris DiMicco and David R. Millen. 2007. Identity management: multiple
+presentations of self in facebook. In Proceedings of the 2007 ACM International
+Conference on Supporting Group Work (GROUP ’07) . Association for Computing
+Machinery, New York, NY, USA, 383–386. https://doi.org/10.1145/1316624.
+1316682
+[25] Jennifer J. Dose and Richard J. Klimoski. 1995. Doing the right thing in the
+workplace: Responsibility in the face of accountability. Employee Responsibilities
+and Rights Journal 8, 1 (1995), 35–56.
+[26] Andre Dua, Kweilin Ellingrud, Bryan Hancock, Ryan Luby, Anu
+Madgavkar, and Sarah Pemberton. 2022. Freelance, side hustles, and
+gigs: Many more Americans have become independent workers | McKin-
+sey. https://www.mckinsey.com/featured-insights/sustainable-inclusive-
+growth/future-of-america/freelance-side-hustles-and-gigs-many-more-
+americans-have-become-independent-workers
+[27] James Duggan, Ultan Sherman, Ronan Carbery, and Anthony McDonnell. 2019.
+Algorithmic management and app-work in the gig economy: A research agenda
+for employment relations and HRM. Human Resource Management Journal 30,
+1 (2019), 114–132. https://doi.org/10.1111/1748-8583.12258
+[28] Daniel A. Epstein, Daniel Avrahami, and Jacob T. Biehl. 2016. Taking 5: Work-
+Breaks, Productivity, and Opportunities for Personal Informatics for Knowledge
+Workers. In Proceedings of the 2016 CHI Conference on Human Factors in Com-
+puting Systems (CHI ’16) . Association for Computing Machinery, New York, NY,
+USA, 673–684. https://doi.org/10.1145/2858036.2858066
+[29] Daniel A. Epstein, Clara Caldeira, Mayara Costa Figueiredo, Xi Lu, Lucas M.
+Silva, Lucretia Williams, Jong Ho Lee, Qingyang Li, Simran Ahuja, Qiuer Chen,
+Payam Dowlatyari, Craig Hilby, Sazeda Sultana, Elizabeth V. Eikey, and Yunan
+Chen. 2020. Mapping and Taking Stock of the Personal Informatics Litera-
+ture. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
+Technologies 4, 4 (Dec 2020), 126:1–126:38. https://doi.org/10.1145/3432231
+[30] Daniel A. Epstein, Nicole B. Lee, Jennifer H. Kang, Elena Agapie, Jessica
+Schroeder, Laura R. Pina, James Fogarty, Julie A. Kientz, and Sean Munson.
+2017. Examining Menstrual Tracking to Inform the Design of Personal Infor-
+matics Tools. In Proceedings of the 2017 CHI Conference on Human Factors in
+Computing Systems (CHI ’17) . Association for Computing Machinery, New York,
+NY, USA, 6876–6888. https://doi.org/10.1145/3025453.3025635
+[31] Daniel A. Epstein, An Ping, James Fogarty, and Sean A. Munson. 2015. A
+lived informatics model of personal informatics. In Proceedings of the 2015
+ACM International Joint Conference on Pervasive and Ubiquitous Computing(UbiComp ’15) . Association for Computing Machinery, New York, NY, USA,
+731–742. https://doi.org/10.1145/2750858.2804250
+[32] Shelly D. Farnham and Elizabeth F. Churchill. 2011. Faceted identity, faceted
+lives: social and technical issues with being yourself online. In Proceedings of
+the ACM 2011 conference on Computer supported cooperative work (CSCW ’11) .
+Association for Computing Machinery, New York, NY, USA, 359–368. https:
+//doi.org/10.1145/1958824.1958880
+[33] Mayara Figueiredo, Clara Caldeira, Yunan Chen, and Kai Zheng. 2018. Routine
+self-tracking of health: reasons, facilitating factors, and the potential impact on
+health management practices. AMIA Annual Symposium Proceedings 2017 (Apr
+2018), 706–714.
+[34] Gary Gerstle. 2022. The Rise and Fall of the Neoliberal Order: America and the
+World in the Free Market Era . Oxford University Press. Google-Books-ID:
+3PJbEAAAQBAJ.
+[35] Kassem A. Ghanem. 2022. Leadership Self-Accountability to Prevent Corruption
+in the Workplace. Open Access Library Journal 9, 1010 (Sep 2022), 1–21. https:
+//doi.org/10.4236/oalib.1109320
+[36] Kassem A. Ghanem and Patricia A. Castelli. 2019. Self-accountability in the
+Literature of Leadership. Journal of Leadership, Accountability and Ethics 16, 5
+(Dec 2019). https://doi.org/10.33423/jlae.v16i5.2653
+[37] Erving Goffman. 1959. The Presentation of Self in Everyday Life . Doubleday
+Anchor Books, Garden City, NY.
+[38] Caleb Goods, Alex Veen, and Tom Barratt. 2019. “Is your gig any good?”
+Analysing job quality in the Australian platform-based food-delivery sector.
+Journal of Industrial Relations 61, 4 (Sep 2019), 502–527. https://doi.org/10.1177/
+0022185618817069
+[39] Xinning Gui, Yu Chen, Clara Caldeira, Dan Xiao, and Yunan Chen. 2017. When
+Fitness Meets Social Networks: Investigating Fitness Tracking and Social Prac-
+tices on WeRun. In Proceedings of the 2017 CHI Conference on Human Factors in
+Computing Systems (CHI ’17) . Association for Computing Machinery, New York,
+NY, USA, 1647–1659. https://doi.org/10.1145/3025453.3025654
+[40] Hayley Guillou, Kevin Chow, Thomas Fritz, and Joanna McGrenere. 2020. Is
+Your Time Well Spent? Reflecting on Knowledge Work More Holistically. In
+Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems
+(CHI ’20) . Association for Computing Machinery, New York, NY, USA, 1–9.
+https://doi.org/10.1145/3313831.3376586
+[41] Gable F. Hackman. 2007. Slipping through the Cracks: Can We Hold Private
+Security Contractors Accountable for Their Actions Abroad Comment. Loyola
+Journal of Public Interest Law 9, 2 (2007), 251–272.
+[42] Angela T. Hall, Dwight D. Frink, and M. Ronald Buckley. 2017. An accountability
+account: A review and synthesis of the theoretical and empirical research on
+felt accountability. Journal of Organizational Behavior 38, 2 (2017), 204–224.
+https://doi.org/10.1002/job.2052
+[43] Seth D. Harris and Alan B. Krueger. 2015. A Proposal for Modernizing
+Labor Laws for Twenty-First Century Work: The “Independent Worker” .
+https://www.hamiltonproject.org/publication/policy-proposal/a-proposal-for-
+modernizing-labor-laws-for-twenty-first-century-work-the-independent-
+worker/
+[44] Päivi Heikkilä, Anita Honka, Sebastian Mach, Franziska Schmalfuß, Eija Kaasi-
+nen, and Kaisa Väänänen. 2018. Quantified Factory Worker - Expert Evalu-
+ation and Ethical Considerations of Wearable Self-tracking Devices. In Pro-
+ceedings of the 22nd International Academic Mindtrek Conference (Mindtrek
+’18). Association for Computing Machinery, New York, NY, USA, 202–211.
+https://doi.org/10.1145/3275116.3275119
+[45] Brett Helling. 2019. The Best Mileage Tracker Apps for Gig Workers | Gig-
+worker.com. https://gigworker.com/mileage-tracker/
+[46] Chih-Hsing Ho and Tyng-Ruey Chuangt. 2019. Governance of Communal
+Data Sharing . Institute of Network Cultures, Amsterdam. Google-Books-ID:
+Y0vUDwAAQBAJ.
+[47] Maya Holikatti, Shagun Jhaver, and Neha Kumar. 2019. Learning to Airbnb
+by Engaging in Online Communities of Practice. Proceedings of the ACM on
+Human-Computer Interaction 3, CSCW (Nov. 2019), 228:1–228:19. https://doi.
+org/10.1145/3359330
+[48] Jane Hsieh, Oluwatobi Adisa, Sachi Bafna, and Haiyi Zhu. 2023. Designing
+Individualized Policy and Technology Interventions to Improve Gig Work Con-
+ditions. In Proceedings of the 2nd Annual Meeting of the Symposium on Human-
+Computer Interaction for Work (CHIWORK ’23) . Association for Computing
+Machinery, New York, NY, USA, 1–9. https://doi.org/10.1145/3596671.3598576
+[49] Jane Hsieh, Yili Hong, Gordon Burtch, and Haiyi Zhu. 2022. A Little Too
+Personal: Effects of Standardization versus Personalization on Job Acquisition,
+Work Completion, and Revenue for Online Freelancers. In Proceedings of the 2022
+CHI Conference on Human Factors in Computing Systems (CHI ’22) . Association
+for Computing Machinery, New York, NY, USA, 1–11. https://doi.org/10.1145/
+3491102.3517546
+[50] Mohammad Hossein Jarrahi and Will Sutherland. 2019. Algorithmic Man-
+agement and Algorithmic Competencies: Understanding and Appropriating
+Algorithms in Gig Work. In Information in Contemporary Society (Lecture Notes
+in Computer Science) , Natalie Greene Taylor, Caitlin Christian-Lamb, Michelle H.
+Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+Martin, and Bonnie Nardi (Eds.). Springer International Publishing, Cham,
+578–589. https://doi.org/10.1007/978-3-030-15742-5_55
+[51] Mohammad Hossein Jarrahi, Will Sutherland, Sarah Beth Nelson, and Steve
+Sawyer. 2020. Platformic Management, Boundary Resources for Gig Work, and
+Worker Autonomy. Computer Supported Cooperative Work (CSCW) 29, 1 (Apr
+2020), 153–189. https://doi.org/10.1007/s10606-019-09368-7
+[52] Joseph Jofish Kaye, Mary McCuistion, Rebecca Gulotta, and David A. Shamma.
+2014. Money talks: tracking personal finances. In Proceedings of the SIGCHI
+Conference on Human Factors in Computing Systems (CHI ’14) . Association for
+Computing Machinery, New York, NY, USA, 521–530. https://doi.org/10.1145/
+2556288.2556975
+[53] Young-Ho Kim, Eun Kyoung Choe, Bongshin Lee, and Jinwook Seo. 2019. Un-
+derstanding Personal Productivity: How Knowledge Workers Define, Evaluate,
+and Reflect on Their Productivity. In Proceedings of the 2019 CHI Conference
+on Human Factors in Computing Systems (CHI ’19) . Association for Computing
+Machinery, New York, NY, USA, 1–12. https://doi.org/10.1145/3290605.3300845
+[54] Young-Ho Kim, Jae Ho Jeon, Eun Kyoung Choe, Bongshin Lee, KwonHyun Kim,
+and Jinwook Seo. 2016. TimeAware: Leveraging Framing Effects to Enhance
+Personal Productivity. In Proceedings of the 2016 CHI Conference on Human
+Factors in Computing Systems (CHI ’16) . Association for Computing Machinery,
+New York, NY, USA, 272–283. https://doi.org/10.1145/2858036.2858428
+[55] Alex Kirven. 2018. Whose Gig Is It Anyway: Technological Change, Workplace
+Control and Supervision, and Workers’ Rights in the Gig Economy Comments.
+University of Colorado Law Review 89, 1 (2018), 249–292.
+[56] Min Kyung Lee, Daniel Kusbit, Evan Metsky, and Laura Dabbish. 2015. Working
+with Machines: The Impact of Algorithmic and Data-Driven Management on
+Human Workers. In Proceedings of the 33rd Annual ACM Conference on Human
+Factors in Computing Systems (CHI ’15) . Association for Computing Machinery,
+New York, NY, USA, 1603–1612. https://doi.org/10.1145/2702123.2702548
+[57] Makayla Lewis and Mark Perry. 2019. Follow the Money: Managing Personal
+Finance Digitally. In Proceedings of the 2019 CHI Conference on Human Factors
+in Computing Systems (CHI ’19) . Association for Computing Machinery, New
+York, NY, USA, 1–14. https://doi.org/10.1145/3290605.3300620
+[58] Ian Li, Anind Dey, and Jodi Forlizzi. 2010. A Stage-Based Model of Personal
+Informatics Systems. CHI ’10: Proceedings of the SIGCHI conference on human
+factors in computing systems (Apr 2010), 557–566. https://doi.org/10.1145/
+1753326.1753409
+[59] Mu Lin, Nicholas D. Lane, Mashfiqui Mohammod, Xiaochao Yang, Hong Lu,
+Giuseppe Cardone, Shahid Ali, Afsaneh Doryab, Ethan Berke, Andrew T. Camp-
+bell, and Tanzeem Choudhury. 2012. BeWell+: multi-dimensional wellbeing mon-
+itoring with community-guided user feedback and energy optimization. In Pro-
+ceedings of the conference on Wireless Health (WH ’12) . Association for Computing
+Machinery, New York, NY, USA, 1–8. https://doi.org/10.1145/2448096.2448106
+[60] Yuhan Luo, Bongshin Lee, Donghee Yvette Wohn, Amanda L. Rebar, David E.
+Conroy, and Eun Kyoung Choe. 2018. Time for Break: Understanding Infor-
+mation Workers’ Sedentary Behavior Through a Break Prompting System. In
+Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems
+(CHI ’18) . Association for Computing Machinery, New York, NY, USA, 1–14.
+https://doi.org/10.1145/3173574.3173701
+[61] Alina Lushnikova, Kerstin Bongard-Blanchy, and Carine Lallemand. 2022. What
+Aspects of Collaboration are Meaningful to You? Informing the Design of Self-
+Tracking Technologies for Collaboration. In Adjunct Proceedings of the 2022
+Nordic Human-Computer Interaction Conference (NordiCHI ’22) . Association
+for Computing Machinery, New York, NY, USA, 1–5. https://doi.org/10.1145/
+3547522.3547681
+[62] Shuhao Ma, Paulo Bala, Valentina Nisi, John Zimmerman, and Nuno Jardim
+Nunes. 2023. Uncovering Gig Worker-Centered Design Opportunities in Food
+Delivery Work. In Proceedings of the 2023 ACM Designing Interactive Systems
+Conference (DIS ’23) . Association for Computing Machinery, New York, NY, USA,
+688–701. https://doi.org/10.1145/3563657.3596123
+[63] Michael David Maffie. 2023. Becoming a pirate: Independence as an alternative
+to exit in the gig economy. British Journal of Industrial Relations 61, 1 (2023),
+46–67. https://doi.org/10.1111/bjir.12668
+[64] Andrew G. Malik. 2017. Worker Classification and the Gig-Economy. Rutgers
+University Law Review 69, 5 (2017), 1729–1768.
+[65] Brenton J. Malin and Curry Chandler. 2017. Free to Work Anxiously: Splintering
+Precarity Among Drivers for Uber and Lyft. Communication, Culture and Critique
+10, 2 (Jun 2017), 382–400. https://doi.org/10.1111/cccr.12157
+[66] Ivan Manokha. 2020. The Implications of Digital Employee Monitoring and
+People Analytics for Power Relations in the Workplace. Surveillance & Society
+18, 4 (Nov 2020), 540–554. https://doi.org/10.24908/ss.v18i4.13776
+[67] James Manyika, Susan Lund, Jacques Bughin, Kelsey Robinson, Jan Mischke,
+and Deepa Mahajan. 2016. Independent work: Choice, necessity, and the gig
+economy . https://www.mckinsey.com/featured-insights/employment-and-
+growth/independent-work-choice-necessity-and-the-gig-economy
+[68] Eleonora Masiero. 2020. Accountability by the accountable self: The case of
+Leone Wollemborg. Accounting History 25, 1 (Feb 2020), 109–133. https:
+//doi.org/10.1177/1032373218816494[69] Lois McNay. 2009. Self as Enterprise: Dilemmas of Control and Resistance in
+Foucault’s The Birth of Biopolitics. Theory, Culture & Society 26, 6 (Nov 2009),
+55–77. https://doi.org/10.1177/0263276409347697
+[70] Amol Mehra. 2009. Bridging Accountability Gaps - The Proliferation of Private
+Military and Security Companies and Ensuring Accountability for Human Rights
+Violations. Pacific McGeorge Global Business & Development Law Journal 22, 2
+(2009), 323–332.
+[71] André N. Meyer, Thomas Fritz, Gail C. Murphy, and Thomas Zimmermann. 2014.
+Software developers’ perceptions of productivity. In Proceedings of the 22nd
+ACM SIGSOFT International Symposium on Foundations of Software Engineering
+(FSE 2014) . Association for Computing Machinery, New York, NY, USA, 19–29.
+https://doi.org/10.1145/2635868.2635892
+[72] Marina Micheli, Marisa Ponti, Max Craglia, and Anna Berti Suman. 2020. Emerg-
+ing models of data governance in the age of datafication. Big Data & Society 7,
+2 (July 2020), 2053951720948087. https://doi.org/10.1177/2053951720948087
+[73] Phoebe V. Moore. 2019. OSH and the Future of Work: Benefits and Risks of
+Artificial Intelligence Tools in Workplaces. In Digital Human Modeling and
+Applications in Health, Safety, Ergonomics and Risk Management. Human Body
+and Motion (Lecture Notes in Computer Science) , Vincent G. Duffy (Ed.). Springer
+International Publishing, Cham, 292–315. https://doi.org/10.1007/978-3-030-
+22216-1_22
+[74] Phoebe V. Moore and Simon Joyce. 2020. Black box or hidden abode? The
+expansion and exposure of platform work managerialism. Review of International
+Political Economy 27, 4 (Jul 2020), 926–948. https://doi.org/10.1080/09692290.
+2019.1627569
+[75] Sarah Mosseri. 2022. Being watched and being seen: Negotiating visibility
+in the NYC ride-hail circuit. New Media & Society 24, 3 (Mar 2022), 600–620.
+https://doi.org/10.1177/1461444820966752
+[76] Richard Mulgan. 2006. Government Accountability For Outsourced Services*.
+Australian Journal of Public Administration 65, 2 (2006), 48–58. https://doi.org/
+10.1111/j.1467-8500.2006.00481.x
+[77] Isabel Munoz, Michael Dunn, Steve Sawyer, and Emily Michaels. 2022. Platform-
+mediated Markets, Online Freelance Workers and Deconstructed Identities.
+Proceedings of the ACM on Human-Computer Interaction 6, CSCW2 (Nov. 2022),
+367:1–367:24. https://doi.org/10.1145/3555092
+[78] Sean A. Munson and Sunny Consolvo. 2012. Exploring goal-setting, rewards, self-
+monitoring, and sharing to motivate physical activity. In 2012 6th International
+Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth)
+and Workshops . 25–32. https://doi.org/10.4108/icst.pervasivehealth.2012.248691
+[79] Mareike Möhlmann and Lior Zalmanson. 2017. Hands on the wheel: Navigating
+algorithmic management and Uber drivers’ autonomy. Seoul, South Korea,
+10–13.
+[80] Gemma Newlands. 2023. The algorithmic surveillance of gig workers: Mechanisms
+and consequences . Routledge. https://www.taylorfrancis.com/chapters/edit/
+10.4324/9781003161875-6/algorithmic-surveillance-gig-workers-gemma-
+newlands
+[81] Mark W. Newman, Debra Lauterbach, Sean A. Munson, Paul Resnick, and
+Margaret E. Morris. 2011. It’s not that i don’t have problems, i’m just not putting
+them on facebook: challenges and opportunities in using online social networks
+for health. In Proceedings of the ACM 2011 conference on Computer supported
+cooperative work (CSCW ’11) . Association for Computing Machinery, New York,
+NY, USA, 341–350. https://doi.org/10.1145/1958824.1958876
+[82] Shu-Yi Oei and Diane M. Ring. 2017. Tax Issues in the Sharing Economy:
+Implications for Workers. Forthcoming, Cambridge Handbook on the Law of the
+Sharing Economy (Nestor M. Davidson, Michele Finck & John J. Infranca, eds.)
+(Dec 2017). https://doi.org/10.2139/ssrn.3167464
+[83] Shu-Yi Oei and Diane M. Ring. 2017. The Tax Lives of Uber Drivers: Evidence
+from Internet Discussion Forums. Columbia Journal of Tax Law 8, 1 (2017),
+56–112.
+[84] National Federation of Independent Business (NFIB). 2020. Guide
+to Independent Contractors: How to Determine a Worker’s Classifica-
+tion. https://assets.nfib.com/nfibcom/NFIB-Guide-to-Independent-Contractors-
+How-to-Determine-a-Workers-Classification.pdf
+[85] Victoria Pagan, Kathryn Haynes, and Stefanie Reissner. 2022. Accountable
+Selves and Responsibility Within a Global Forum. Journal of Business Ethics
+(Nov 2022). https://doi.org/10.1007/s10551-022-05286-9
+[86] Lawrence A. Palinkas, Sarah M. Horwitz, Carla A. Green, Jennifer P. Wisdom,
+Naihua Duan, and Kimberly Hoagwood. 2015. Purposeful Sampling for Qualita-
+tive Data Collection and Analysis in Mixed Method Implementation Research.
+Administration and Policy in Mental Health and Mental Health Services Research
+42, 5 (Sep 2015), 533–544. https://doi.org/10.1007/s10488-013-0528-y
+[87] Alexi Pfeffer-Gillett. 2016. When Disruption Collides with Accountability:
+Holding Ridesharing Companies Liable for Acts of Their Drivers Note. California
+Law Review 104, 1 (2016), 233–268.
+[88] Kyrill Potapov and Paul Marshall. 2020. LifeMosaic: co-design of a personal
+informatics tool for youth. In Proceedings of the Interaction Design and Children
+Conference (IDC ’20) . Association for Computing Machinery, New York, NY,
+USA, 519–531. https://doi.org/10.1145/3392063.3394429
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA Hernandez et al.
+[89] Gary W. Pritchard, Pam Briggs, John Vines, and Patrick Olivier. 2015. How to
+Drive a London Bus: Measuring Performance in a Mobile and Remote Work-
+place. In Proceedings of the 33rd Annual ACM Conference on Human Factors in
+Computing Systems (CHI ’15) . Association for Computing Machinery, New York,
+NY, USA, 1885–1894. https://doi.org/10.1145/2702123.2702307
+[90] Susan E. Provenzano. 2023. Worker Classification Conundrums in the Gig
+Economy Symposium - Gig Economy. University of the Pacific Law Review 54, 1
+(2023), 67–81.
+[91] Rida Qadri and Catherine D’Ignazio. 2022. Seeing like a driver: How workers
+repair, resist, and reinforce the platform’s algorithmic visions. Big Data & Society
+9, 2 (Jul 2022). https://doi.org/10.1177/20539517221133780
+[92] Amon Rapp and Federica Cena. 2014. Self-monitoring and Technology: Chal-
+lenges and Open Issues in Personal Informatics. In Universal Access in Human-
+Computer Interaction. Design for All and Accessibility Practice (Lecture Notes
+in Computer Science) , Constantine Stephanidis and Margherita Antona (Eds.).
+Springer International Publishing, Cham, 613–622. https://doi.org/10.1007/978-
+3-319-07509-9_58
+[93] Chelsea Rauch. 2021. Accountability for Employers or Independence for Con-
+tractors? Accomplishing AB5’s Labor Classification Goals in the Gig Economy
+Notes. Seattle University Law Review 44, 2 (2021), 563–590.
+[94] Noopur Raval and Paul Dourish. 2016. Standing Out from the Crowd: Emotional
+Labor, Body Labor, and Temporal Labor in Ridesharing. In Proceedings of the 19th
+ACM Conference on Computer-Supported Cooperative Work & Social Computing
+(CSCW ’16) . Association for Computing Machinery, New York, NY, USA, 97–107.
+https://doi.org/10.1145/2818048.2820026
+[95] Daniel M. Ravid, David L. Tomczak, Jerod C. White, and Tara S. Behrend.
+2020. EPM 20/20: A Review, Framework, and Research Agenda for Electronic
+Performance Monitoring. Journal of Management 46, 1 (Jan 2020), 100–126.
+https://doi.org/10.1177/0149206319869435
+[96] Amelia Regan and Nicola Christie. 2022. Workers and the Post-COVID Trans-
+portation Gig Economy . Springer International Publishing, Cham, 49–59.
+https://doi.org/10.1007/978-3-031-00148-2_4
+[97] John Ritchie and Sue Richardson. 2000. Smaller business governance: Explor-
+ing accountability and enterprise from the margins. Management Accounting
+Research 11, 4 (Dec 2000), 451–474. https://doi.org/10.1006/mare.2000.0144
+[98] Alex Rosenblat and Luke Stark. 2016. Algorithmic Labor and Information Asym-
+metries: A Case Study of Uber’s Drivers. International Journal of Communication
+(19328036) 10 (Jan 2016), 3758–3784.
+[99] Shruti Sannon, Billie Sun, and Dan Cosley. 2022. Privacy, Surveillance, and
+Power in the Gig Economy. In Proceedings of the 2022 CHI Conference on Human
+Factors in Computing Systems (CHI ’22) . Association for Computing Machinery,
+New York, NY, USA, 1–15. https://doi.org/10.1145/3491102.3502083
+[100] Noam Scheiber. 2022. Biden Proposal Could Lead to Employee Status for Gig
+Workers. The New York Times (Oct 2022). https://www.nytimes.com/2022/10/
+11/business/economy/biden-gig-workers-contractors-employees.html
+[101] Internal Revenue Service. 2022. https://www.irs.gov/newsroom/irs-increases-
+mileage-rate-for-remainder-of-2022
+[102] Jeffrey M. Stanton. 2000. Reactions to Employee Performance Monitoring:
+Framework, Review, and Research Directions. Human Performance 13, 1 (Jan
+2000), 85–113. https://doi.org/10.1207/S15327043HUP1301_4
+[103] Jake M L Stein, Vidminas Vizgirda, Max Van Kleek, Reuben Binns, Jun Zhao, Rui
+Zhao, Naman Goel, George Chalhoub, Wael S Albayaydh, and Nigel Shadbolt.
+2023. ‘You are you and the app. There’s nobody else. ’: Building Worker-Designed
+Data Institutions within Platform Hegemony. In Proceedings of the 2023 CHI
+Conference on Human Factors in Computing Systems (CHI ’23) . Association for
+Computing Machinery, New York, NY, USA, 1–26. https://doi.org/10.1145/
+3544548.3581114
+[104] Raphael Tackx, Leo Blondel, and Marc Santolini. 2021. Quantified Us: A group-in-
+the-loop approach to team network reconstruction. In Adjunct Proceedings of the
+2021 ACM International Joint Conference on Pervasive and Ubiquitous Computing
+and Proceedings of the 2021 ACM International Symposium on Wearable Computers
+(UbiComp ’21) . Association for Computing Machinery, New York, NY, USA,
+502–507. https://doi.org/10.1145/3460418.3479363
+[105] Jennifer D. Thayer. 2020. The Gig Worker: The Growth of the Online Platform,
+the Need for Universal Worker Classification, and a Reduction of the Tax Com-
+pliance Burden. In Institute for Global Business Research Conference Proceedings
+(1, Vol. 4) . 118–123. https://www.igbr.org/wp-content/uploads/2020/05/2020-
+Conference-Proceedings-vol-4-no-1.pdf#page=119
+[106] Kathleen DeLaney Thomas. 2018. Taxing the Gig Economy. University of
+Pennsylvania Law Review 166, 6 (2018), 1415–1473.
+[107] Xin Tong, Diane Gromala, Chris D. Shaw, and Amber Choo. 2016. A Field
+Study: Evaluating Gamification Approaches for Promoting Physical Activity
+with Motivational Models of Behavior Changes. In Human-Computer Interaction.
+Novel User Experiences (Lecture Notes in Computer Science) , Masaaki Kurosu (Ed.).
+Springer International Publishing, Cham, 417–424. https://doi.org/10.1007/978-
+3-319-39513-5_39
+[108] Carlos Toxtli, Siddharth Suri, and Saiph Savage. 2021. Quantifying the Invisible
+Labor in Crowd Work. Proceedings of the ACM on Human-Computer Interaction5, CSCW2 (Oct 2021), 319:1–319:26. https://doi.org/10.1145/3476060
+[109] Steven Vallas and Juliet B. Schor. 2020. What Do Platforms Do? Understanding
+the Gig Economy. Annual Review of Sociology 46, 1 (2020), 273–294. https:
+//doi.org/10.1146/annurev-soc-121919-054857
+[110] Niels van Doorn and Adam Badger. 2020. Platform Capitalism’s Hidden Abode:
+Producing Data Assets in the Gig Economy. Antipode 52, 5 (2020), 1475–1495.
+https://doi.org/10.1111/anti.12641
+[111] Lorenz Verelst, Rein De Cooman, and Marijke Verbruggen. 2022. The Food
+App is Watching You: The Relationship between Daily Algorithmic Control and
+Meaningful Work and the Role of Job Crafting. http://hdl.handle.net/10125/
+79884
+[112] Dennis Wang, Marawin Chheang, Siyun Ji, Ryan Mohta, and Daniel A. Epstein.
+2022. SnapPI: Understanding Everyday Use of Personal Informatics Data Stickers
+on Ephemeral Social Media. Proceedings of the ACM on Human-Computer
+Interaction 6, CSCW2 (Nov 2022), 539:1–539:27. https://doi.org/10.1145/3555652
+[113] Jamie Woodcock and Mark Graham. 2020. The Gig Economy: A Critical Intro-
+duction . Polity. https://www.wiley.com/en-us/The+Gig+Economy%3A+A+
+Critical+Introduction-p-9781509536368
+[114] Zheng Yao, Silas Weden, Lea Emerlyn, Haiyi Zhu, and Robert E. Kraut. 2021.
+Together But Alone: Atomization and Peer Support among Gig Workers. Pro-
+ceedings of the ACM on Human-Computer Interaction 5, CSCW2 (Oct 2021),
+391:1–391:29. https://doi.org/10.1145/3479535
+[115] Chuang-Wen You, Chien Wen (Tina) Yuan, Nanyi Bi, Min-Wei Hung, Po-Chun
+Huang, and Hao-Chuan Wang. 2021. Go Gig or Go Home: Enabling Social Sens-
+ing to Share Personal Data with Intimate Partner for the Health and Wellbeing
+of Long-Hour workers. In Proceedings of the 2021 CHI Conference on Human
+Factors in Computing Systems (CHI ’21) . Association for Computing Machinery,
+New York, NY, USA, 1–16. https://doi.org/10.1145/3411764.3445278
+[116] Angie Zhang, Alexander Boltz, Jonathan Lynn, Chun-Wei Wang, and Min Kyung
+Lee. 2023. Stakeholder-Centered AI Design: Co-Designing Worker Tools with
+Gig Workers through Data Probes. In Proceedings of the 2023 CHI Conference
+on Human Factors in Computing Systems (CHI ’23) . Association for Computing
+Machinery, New York, NY, USA, 1–19. https://doi.org/10.1145/3544548.3581354
+[117] Angie Zhang, Alexander Boltz, Chun Wei Wang, and Min Kyung Lee. 2022.
+Algorithmic Management Reimagined For Workers and By Workers: Centering
+Worker Well-Being in Gig Work. In Proceedings of the 2022 CHI Conference on
+Human Factors in Computing Systems (CHI ’22) . Association for Computing
+Machinery, New York, NY, USA, 1–20. https://doi.org/10.1145/3491102.3501866
+View publication stats

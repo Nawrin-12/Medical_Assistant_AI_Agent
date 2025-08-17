@@ -1,0 +1,8 @@
+PyPDF2
+langchain
+sentence-transformers
+faiss-cpu
+fastapi
+python-dotenv
+uvicorn
+openai
