@@ -2,7 +2,14 @@ PyPDF2
 langchain
 sentence-transformers
 faiss-cpu
+prometheus-eval
+fpdf
 fastapi
 python-dotenv
-uvicorn
-openai
+sacrebleu>=2.3.1
+bert-score
+rouge-score
+seaborn
+fastapi
+uvicorn[standard]
+docling-parse
